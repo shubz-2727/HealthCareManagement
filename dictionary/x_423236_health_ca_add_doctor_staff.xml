@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_user" label="doctor / staff" max_length="40" name="x_423236_health_ca_add_doctor_staff" type="collection"/>
+</database>

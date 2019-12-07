@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="80f7ca86dbed40101ed2c4ab0b961995" sys_domain="global" table="x_423236_health_ca_patient" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-12-07 15:34:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4cf74e86dbed40101ed2c4ab0b9619f9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_423236_health_ca_patient" name="x_423236_health_ca_patient" sys_domain="global" view="3e5370019f22120047a2d126c42e705b">80f7ca86dbed40101ed2c4ab0b961995</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_423236_health_ca_patient" sys_domain="global" view="3e5370019f22120047a2d126c42e705b">80f74e86dbed40101ed2c4ab0b9619f2</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-12-07 15:34:25</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-12-07 15:34:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>88f7ca86dbed40101ed2c4ab0b96199c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_423236_health_ca_patient" name="x_423236_health_ca_patient" sys_domain="global" view="3e5370019f22120047a2d126c42e705b">80f7ca86dbed40101ed2c4ab0b961995</sys_ui_form>
+            <sys_ui_section caption="Relative" display_value="Relative" name="x_423236_health_ca_patient" sys_domain="global" view="3e5370019f22120047a2d126c42e705b">80f7ca86dbed40101ed2c4ab0b961997</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-12-07 15:34:25</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-12-07 15:34:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8cf78e86dbed40101ed2c4ab0b961902</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_423236_health_ca_patient" name="x_423236_health_ca_patient" sys_domain="global" view="3e5370019f22120047a2d126c42e705b">80f7ca86dbed40101ed2c4ab0b961995</sys_ui_form>
+            <sys_ui_section caption="Contact Details" display_value="Contact Details" name="x_423236_health_ca_patient" sys_domain="global" view="3e5370019f22120047a2d126c42e705b">44f74e86dbed40101ed2c4ab0b9619fa</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-12-07 15:34:25</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-12-07 15:38:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7ac80ec6dbed40101ed2c4ab0b9619df</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_423236_health_ca_patient" name="x_423236_health_ca_patient" sys_domain="global" view="3e5370019f22120047a2d126c42e705b">80f7ca86dbed40101ed2c4ab0b961995</sys_ui_form>
+            <sys_ui_section caption="Health Bio" display_value="Health Bio" name="x_423236_health_ca_patient" sys_domain="global" view="3e5370019f22120047a2d126c42e705b">3ac80ec6dbed40101ed2c4ab0b9619dc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-12-07 15:38:09</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_423236_health_ca_patient</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-12-07 15:34:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>80f7ca86dbed40101ed2c4ab0b961995</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_423236_health_ca_patient</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
+            <sys_update_name>sys_ui_form_sections_80f7ca86dbed40101ed2c4ab0b961995</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-12-07 15:34:25</sys_updated_on>
+            <sys_user/>
+            <view display_value="Human Resources" name="human_resources">3e5370019f22120047a2d126c42e705b</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

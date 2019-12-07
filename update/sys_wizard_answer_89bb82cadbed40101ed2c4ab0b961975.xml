@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer">
+    <sys_wizard_answer action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <answer>Appointment</answer>
+        <button_label/>
+        <dependent_value/>
+        <element/>
+        <name>Appointment</name>
+        <next_question/>
+        <order>100</order>
+        <payload_name/>
+        <question display_value="Task" name="Task">00f7b7a4db0100101ed2c4ab0b9619a7</question>
+        <roles/>
+        <script/>
+        <sys_class_name>sys_wizard_answer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-07 15:50:52</sys_created_on>
+        <sys_id>89bb82cadbed40101ed2c4ab0b961975</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Appointment</sys_name>
+        <sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
+        <sys_update_name>sys_wizard_answer_89bb82cadbed40101ed2c4ab0b961975</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-07 15:50:52</sys_updated_on>
+        <table/>
+        <target_url>x_423236_health_ca_appointment.do</target_url>
+        <type>1</type>
+    </sys_wizard_answer>
+</record_update>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_calendar_date_time_6" label="Set appointment" language="en" table="x_423236_health_ca_appointment">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_calendar_date_time_6</element>
+            <help/>
+            <hint/>
+            <label>Set appointment</label>
+            <language>en</language>
+            <name>x_423236_health_ca_appointment</name>
+            <plural>Set appointments</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-12-07 15:56:11</sys_created_on>
+            <sys_id>36ec0a0edbed40101ed2c4ab0b9619bf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Set appointment</sys_name>
+            <sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
+            <sys_update_name>sys_documentation_x_423236_health_ca_appointment_u_calendar_date_time_6_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-12-07 15:56:11</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

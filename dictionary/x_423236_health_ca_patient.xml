@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_user" label="Patient" max_length="40" name="x_423236_health_ca_patient" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Blood Group" max_length="40" name="u_choice_6" type="string">
+            <choice>
+                <element inactive_on_update="false" label="AB" sequence="0" value="ab"/>
+                <element inactive_on_update="false" label="A" sequence="1" value="a"/>
+                <element inactive_on_update="false" label="B" sequence="2" value="b"/>
+            </choice>
+        </element>
+        <element label="Height" max_length="40" name="u_float_4" type="float"/>
+        <element label="Weight" max_length="40" name="u_float_5" type="float"/>
+        <element attributes="edge_encryption_enabled=true" label="First Name" max_length="40" name="u_string_1" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Last Name" max_length="40" name="u_string_2" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Relation" max_length="40" name="u_string_3" type="string"/>
+    </element>
+</database>

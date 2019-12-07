@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="DELETE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description/>
+        <elevated_privilege>false</elevated_privilege>
+        <encryption_context/>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_423236_health_ca.add_doctor_staff_user</name>
+        <requires_subscription>-1</requires_subscription>
+        <scoped_admin>false</scoped_admin>
+        <suffix>add_doctor_staff_user</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-07 15:25:18</sys_created_on>
+        <sys_id>aed58e42dbed40101ed2c4ab0b961932</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_423236_health_ca.add_doctor_staff_user</sys_name>
+        <sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
+        <sys_update_name>sys_user_role_aed58e42dbed40101ed2c4ab0b961932</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-07 15:25:18</sys_updated_on>
+    </sys_user_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</application>
+        <file_path/>
+        <instance_id>0dfc6f02db7bbb008aea21c4059619eb</instance_id>
+        <instance_name>dev93413</instance_name>
+        <name>sys_user_role_aed58e42dbed40101ed2c4ab0b961932</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role"><sys_user_role action="INSERT_OR_UPDATE"><assignable_by/><can_delegate>true</can_delegate><description/><elevated_privilege>false</elevated_privilege><encryption_context/><grantable>true</grantable><includes_roles/><name>x_423236_health_ca.add_doctor_staff_user</name><requires_subscription>-1</requires_subscription><scoped_admin>false</scoped_admin><suffix>add_doctor_staff_user</suffix><sys_class_name>sys_user_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2019-12-07 15:25:18</sys_created_on><sys_id>aed58e42dbed40101ed2c4ab0b961932</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_423236_health_ca.add_doctor_staff_user</sys_name><sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package><sys_policy/><sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope><sys_update_name>sys_user_role_aed58e42dbed40101ed2c4ab0b961932</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-12-07 15:25:18</sys_updated_on></sys_user_role></record_update>]]></payload>
+        <payload_hash>1015683960</payload_hash>
+        <record_name>x_423236_health_ca.add_doctor_staff_user</record_name>
+        <reverted_from/>
+        <source>f8758a42dbed40101ed2c4ab0b96190c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-07 15:25:18</sys_created_on>
+        <sys_id>e2d58e42dbed40101ed2c4ab0b961937</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16ee0f711bb0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-07 15:25:18</sys_updated_on>
+        <type>Role</type>
+        <update_guid>2ed58e42abed40103d08463dcf4b5336</update_guid>
+        <update_guid_history>2ed58e42abed40103d08463dcf4b5336:1015683960</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_423236_health_ca.add_doctor_staff_user">7396c2c2dbed40101ed2c4ab0b96196f</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-07 15:28:40</sys_created_on>
+        <sys_db_object display_value="" name="sys_user_role">sys_user_role</sys_db_object>
+        <sys_id>21e0921b02ce428d9838bd497df56e31</sys_id>
+        <sys_metadata>aed58e42dbed40101ed2c4ab0b961932</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_423236_health_ca.add_doctor_staff_user</sys_name>
+        <sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
+        <sys_scope_delete display_value="">52302f37b32f42cc9fcf05efa4575319</sys_scope_delete>
+        <sys_update_name>sys_user_role_aed58e42dbed40101ed2c4ab0b961932</sys_update_name>
+        <sys_update_version display_value="sys_user_role_aed58e42dbed40101ed2c4ab0b961932">e2d58e42dbed40101ed2c4ab0b961937</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-07 15:28:40</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
