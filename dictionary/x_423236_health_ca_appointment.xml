@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element extends="task" label="Appointment" max_length="40" name="x_423236_health_ca_appointment" type="collection">
         <element attributes="edge_encryption_enabled=true" label="Set appointment" max_length="40" name="u_calendar_date_time_6" type="calendar_date_time"/>
-        <element label="New Email" max_length="40" name="u_email_2" type="email"/>
+        <element label="Email" max_length="40" name="u_email_2" type="email"/>
         <element attributes="encode_utf8=false" label="User Id" max_length="32" name="u_reference_3" reference="x_423236_health_ca_patient" type="reference"/>
         <element attributes="edge_encryption_enabled=true" label="First Name" max_length="40" name="u_string_4" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Last Name" max_length="40" name="u_string_5" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="User name" max_length="40" name="u_user_name" type="string"/>
     </element>
 </database>

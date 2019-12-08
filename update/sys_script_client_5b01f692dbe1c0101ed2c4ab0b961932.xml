@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>On change user ID populate nam and email filled</description>
+        <field>u_reference_1</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Populate name field report</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+
+		// Instantiate the GetEmailAddress Script Include
+	var getPatientdetail = new GlideAjax('GetPatientDetail');
+	// Specify the getEmail method
+	getPatientdetail.addParam('sysparm_name','getPatient');
+	// Pass the Requested for sys_id
+	getPatientdetail.addParam('user_name', g_form.getValue('u_reference_1'));
+	// Send the request to the server
+	getPatientdetail.getXML(populateField);
+   
+
+	// When the response is back from the server
+	function populateField(response){
+    	// Extract the email address from the response, clear any value from the email field,
+    	// set new value in the email field
+    	var patient = response.responseXML.documentElement.getAttribute("answer");
+		g_form.addInfoMessage(patient);
+        patient = patient.evalJSON(); 
+        g_form.clearValue('u_string_2');
+        g_form.setValue('u_string_2',patient.fn);
+		g_form.addInfoMessage(patient);
+		
+	}
+
+   //Type appropriate comment here, and begin script below
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-08 13:26:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5b01f692dbe1c0101ed2c4ab0b961932</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Populate name field report</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
+        <sys_update_name>sys_script_client_5b01f692dbe1c0101ed2c4ab0b961932</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-08 14:42:48</sys_updated_on>
+        <table>x_423236_health_ca_patient_treatment_report</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

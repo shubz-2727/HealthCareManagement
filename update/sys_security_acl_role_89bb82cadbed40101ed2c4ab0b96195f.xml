@@ -4,16 +4,16 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-12-07 15:50:52</sys_created_on>
         <sys_id>89bb82cadbed40101ed2c4ab0b96195f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>x_423236_health_ca_appointment.x_423236_health_ca.admin</sys_name>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>x_423236_health_ca_appointment.x_423236_health_ca.appoitment_user</sys_name>
         <sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
         <sys_security_acl display_value="x_423236_health_ca_appointment">0dbb82cadbed40101ed2c4ab0b96195c</sys_security_acl>
         <sys_update_name>sys_security_acl_role_89bb82cadbed40101ed2c4ab0b96195f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-07 15:50:52</sys_updated_on>
-        <sys_user_role display_value="x_423236_health_ca.admin" name="x_423236_health_ca.admin">a68542cedbad40101ed2c4ab0b961964</sys_user_role>
+        <sys_updated_on>2019-12-08 12:35:55</sys_updated_on>
+        <sys_user_role display_value="x_423236_health_ca.appoitment_user" name="x_423236_health_ca.appoitment_user">d178e65adba1c0101ed2c4ab0b9619dc</sys_user_role>
         <transaction_id/>
     </sys_security_acl_role>
 </record_update>
