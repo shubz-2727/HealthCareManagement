@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="Patient Treatment report" max_length="40" name="x_423236_health_ca_patient_treatment_report" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Test" max_length="40" name="u_choice_9" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Blood Test" sequence="0" value="blood test"/>
+                <element inactive_on_update="false" label="X-ray" sequence="1" value="x-ray"/>
+            </choice>
+        </element>
+        <element label="Add report" max_length="40" name="u_file_attachment_8" type="file_attachment"/>
+        <element attributes="encode_utf8=false" label="User ID" max_length="32" name="u_reference_1" reference="x_423236_health_ca_patient" type="reference"/>
+        <element attributes="encode_utf8=false" label="Doctor" max_length="32" name="u_reference_6" reference="x_423236_health_ca_add_doctor_staff" type="reference"/>
+        <element attributes="encode_utf8=false" label="Doctor" max_length="32" name="u_reference_7" reference="x_423236_health_ca_add_doctor_staff" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Short description" max_length="500" name="u_string_10" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="First Name" max_length="40" name="u_string_2" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Last Name" max_length="40" name="u_string_3" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Diagnosis" max_length="4100" name="u_string_4" type="string"/>
+    </element>
+</database>

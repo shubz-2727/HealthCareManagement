@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="60e84112db2d80101ed2c4ab0b9619a9" sys_domain="global" table="x_423236_health_ca_patient_treatment_report" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-12-08 05:37:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e0e84112db2d80101ed2c4ab0b9619ab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_423236_health_ca_patient_treatment_report" name="x_423236_health_ca_patient_treatment_report" sys_domain="global" view="Default view">60e84112db2d80101ed2c4ab0b9619a9</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_423236_health_ca_patient_treatment_report" sys_domain="global" view="Default view">ed25459adbe980101ed2c4ab0b96195c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-12-08 05:37:25</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-12-08 05:37:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a0e84112db2d80101ed2c4ab0b9619ac</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_423236_health_ca_patient_treatment_report" name="x_423236_health_ca_patient_treatment_report" sys_domain="global" view="Default view">60e84112db2d80101ed2c4ab0b9619a9</sys_ui_form>
+            <sys_ui_section caption="Conducted by" display_value="Conducted by" name="x_423236_health_ca_patient_treatment_report" sys_domain="global" view="Default view">28e80112db2d80101ed2c4ab0b961994</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-12-08 05:37:25</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-12-08 05:37:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a8e84112db2d80101ed2c4ab0b9619af</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_423236_health_ca_patient_treatment_report" name="x_423236_health_ca_patient_treatment_report" sys_domain="global" view="Default view">60e84112db2d80101ed2c4ab0b9619a9</sys_ui_form>
+            <sys_ui_section caption="Treatment Report" display_value="Treatment Report" name="x_423236_health_ca_patient_treatment_report" sys_domain="global" view="Default view">a4e80112db2d80101ed2c4ab0b961995</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-12-08 05:37:25</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-12-08 05:37:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>24e84112db2d80101ed2c4ab0b9619b3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_423236_health_ca_patient_treatment_report" name="x_423236_health_ca_patient_treatment_report" sys_domain="global" view="Default view">60e84112db2d80101ed2c4ab0b9619a9</sys_ui_form>
+            <sys_ui_section caption="Lab report" display_value="Lab report" name="x_423236_health_ca_patient_treatment_report" sys_domain="global" view="Default view">ace84112db2d80101ed2c4ab0b9619a7</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-12-08 05:37:25</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-12-08 05:53:53</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c2ac8516db2d80101ed2c4ab0b9619fd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_423236_health_ca_patient_treatment_report" name="x_423236_health_ca_patient_treatment_report" sys_domain="global" view="Default view">60e84112db2d80101ed2c4ab0b9619a9</sys_ui_form>
+            <sys_ui_section caption="Comments" display_value="Comments" name="x_423236_health_ca_patient_treatment_report" sys_domain="global" view="Default view">ceac8516db2d80101ed2c4ab0b961970</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-12-08 05:53:53</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_423236_health_ca_patient_treatment_report</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-12-08 05:37:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>60e84112db2d80101ed2c4ab0b9619a9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_423236_health_ca_patient_treatment_report</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
+            <sys_update_name>sys_ui_form_sections_60e84112db2d80101ed2c4ab0b9619a9</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-12-08 05:37:25</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

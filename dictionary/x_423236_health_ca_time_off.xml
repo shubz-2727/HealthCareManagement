@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="Time-off" max_length="40" name="x_423236_health_ca_time_off" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="From" max_length="40" name="u_calendar_date_time_5" type="calendar_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="To" max_length="40" name="u_calendar_date_time_6" type="calendar_date_time"/>
+        <element label="New Email" max_length="40" name="u_email_2" type="email"/>
+        <element attributes="encode_utf8=false" label="User Id" max_length="32" name="u_reference_1" reference="x_423236_health_ca_add_doctor_staff" type="reference"/>
+        <element attributes="encode_utf8=false" label="Manager" max_length="32" name="u_reference_7" reference="x_423236_health_ca_add_doctor_staff" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="First Name" max_length="40" name="u_string_3" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Last Name" max_length="40" name="u_string_4" type="string"/>
+    </element>
+</database>
