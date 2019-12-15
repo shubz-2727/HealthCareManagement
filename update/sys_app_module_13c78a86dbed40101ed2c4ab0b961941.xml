@@ -17,14 +17,14 @@
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
-        <roles>x_423236_health_ca.patient_user,x_423236_health_ca.staff</roles>
+        <roles>x_423236_health_ca.staff</roles>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-12-07 15:33:49</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>13c78a86dbed40101ed2c4ab0b961941</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>All Patients</sys_name>
         <sys_overrides/>
         <sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package>
@@ -32,7 +32,7 @@
         <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
         <sys_update_name>sys_app_module_13c78a86dbed40101ed2c4ab0b961941</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-07 15:42:49</sys_updated_on>
+        <sys_updated_on>2019-12-10 10:24:20</sys_updated_on>
         <timeline_page/>
         <title>All Patients</title>
         <uncancelable>false</uncancelable>

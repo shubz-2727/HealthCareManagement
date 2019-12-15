@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="x_423236_health_ca_u_choice_6" label="Blood Group(x_423236_health_ca_u_choice_6)" language="en" table="x_423236_health_ca_patient">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>x_423236_health_ca_u_choice_6</element>
+            <help/>
+            <hint/>
+            <label>Blood Group(x_423236_health_ca_u_choice_6)</label>
+            <language>en</language>
+            <name>x_423236_health_ca_patient</name>
+            <plural>Blood Group(x_423236_health_ca_u_choice_6)</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-12-11 07:21:41</sys_created_on>
+            <sys_id>1d8d3893db21c4101ed2c4ab0b9619c0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Blood Group(x_423236_health_ca_u_choice_6)</sys_name>
+            <sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
+            <sys_update_name>sys_documentation_x_423236_health_ca_patient_x_423236_health_ca_u_choice_6_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-12-11 07:21:41</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

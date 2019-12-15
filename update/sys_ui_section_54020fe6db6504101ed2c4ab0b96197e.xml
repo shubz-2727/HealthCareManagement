@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Job role" section_id="54020fe6db6504101ed2c4ab0b96197e" sys_domain="global" table="x_423236_health_ca_patient" version="3" view="Doctor">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>title</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-12-09 09:05:05</sys_created_on>
+            <sys_id>98020fe6db6504101ed2c4ab0b96197f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Job role" display_value="Job role" name="x_423236_health_ca_patient" sys_domain="global" view="7f35726adb2504101ed2c4ab0b961911">54020fe6db6504101ed2c4ab0b96197e</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-12-09 09:05:05</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>manager</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-12-09 09:05:05</sys_created_on>
+            <sys_id>14020fe6db6504101ed2c4ab0b961980</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Job role" display_value="Job role" name="x_423236_health_ca_patient" sys_domain="global" view="7f35726adb2504101ed2c4ab0b961911">54020fe6db6504101ed2c4ab0b96197e</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-12-09 09:05:05</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-12-09 09:05:05</sys_created_on>
+            <sys_id>98020fe6db6504101ed2c4ab0b961980</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Job role" display_value="Job role" name="x_423236_health_ca_patient" sys_domain="global" view="7f35726adb2504101ed2c4ab0b961911">54020fe6db6504101ed2c4ab0b96197e</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-12-09 09:05:05</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>department</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-12-09 09:05:05</sys_created_on>
+            <sys_id>10020fe6db6504101ed2c4ab0b961981</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Job role" display_value="Job role" name="x_423236_health_ca_patient" sys_domain="global" view="7f35726adb2504101ed2c4ab0b961911">54020fe6db6504101ed2c4ab0b96197e</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-12-09 09:05:05</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Job role</caption>
+            <header>false</header>
+            <name>x_423236_health_ca_patient</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-12-09 09:05:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>54020fe6db6504101ed2c4ab0b96197e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Job role</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
+            <sys_update_name>sys_ui_section_54020fe6db6504101ed2c4ab0b96197e</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-12-09 09:05:05</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Doctor" name="Doctor">7f35726adb2504101ed2c4ab0b961911</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

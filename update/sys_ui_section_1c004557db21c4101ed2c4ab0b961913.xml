@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Set time" section_id="1c004557db21c4101ed2c4ab0b961913" sys_domain="global" table="x_423236_health_ca_doctor_time_slot" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_date_from</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-12-11 07:32:33</sys_created_on>
+            <sys_id>a4004557db21c4101ed2c4ab0b96198c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Set time" display_value="Set time" name="x_423236_health_ca_doctor_time_slot" sys_domain="global" view="Default view">1c004557db21c4101ed2c4ab0b961913</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-12-11 07:32:33</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_from_time</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-12-11 07:32:33</sys_created_on>
+            <sys_id>2c004557db21c4101ed2c4ab0b96198c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Set time" display_value="Set time" name="x_423236_health_ca_doctor_time_slot" sys_domain="global" view="Default view">1c004557db21c4101ed2c4ab0b961913</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-12-11 07:32:33</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_active</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-12-11 07:32:33</sys_created_on>
+            <sys_id>a0004557db21c4101ed2c4ab0b96198d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Set time" display_value="Set time" name="x_423236_health_ca_doctor_time_slot" sys_domain="global" view="Default view">1c004557db21c4101ed2c4ab0b961913</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-12-11 07:32:33</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-12-11 07:32:33</sys_created_on>
+            <sys_id>28004557db21c4101ed2c4ab0b96198d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Set time" display_value="Set time" name="x_423236_health_ca_doctor_time_slot" sys_domain="global" view="Default view">1c004557db21c4101ed2c4ab0b961913</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-12-11 07:32:33</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_date_to</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-12-11 07:32:33</sys_created_on>
+            <sys_id>ac004557db21c4101ed2c4ab0b96198d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Set time" display_value="Set time" name="x_423236_health_ca_doctor_time_slot" sys_domain="global" view="Default view">1c004557db21c4101ed2c4ab0b961913</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-12-11 07:32:33</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_time_to</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-12-11 07:32:33</sys_created_on>
+            <sys_id>24004557db21c4101ed2c4ab0b96198e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Set time" display_value="Set time" name="x_423236_health_ca_doctor_time_slot" sys_domain="global" view="Default view">1c004557db21c4101ed2c4ab0b961913</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-12-11 07:32:33</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Set time</caption>
+            <header>false</header>
+            <name>x_423236_health_ca_doctor_time_slot</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-12-11 07:32:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1c004557db21c4101ed2c4ab0b961913</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Set time</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
+            <sys_update_name>sys_ui_section_1c004557db21c4101ed2c4ab0b961913</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-12-11 07:32:32</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

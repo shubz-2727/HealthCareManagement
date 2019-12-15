@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Doctor Time slot" max_length="40" name="x_423236_health_ca_doctor_time_slot" type="collection">
+        <element label="ACTIVE" max_length="40" name="u_active" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Date From" max_length="40" name="u_date_from" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Date TO" max_length="40" name="u_date_to" type="glide_date"/>
+        <element label="From TIME" max_length="40" name="u_from_time" type="glide_time"/>
+        <element attributes="encode_utf8=false" label="Doctor" max_length="32" name="u_reference_1" reference="x_423236_health_ca_add_doctor_staff" type="reference"/>
+        <element label="To time" max_length="40" name="u_time_to" type="glide_time"/>
+        <index name="index">
+            <element name="u_reference_1"/>
+        </index>
+    </element>
+</database>

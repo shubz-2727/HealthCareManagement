@@ -10,7 +10,7 @@
             <sys_mod_count>0</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="x_423236_health_ca_add_doctor_staff" name="x_423236_health_ca_add_doctor_staff" sys_domain="global" view="3e5370019f22120047a2d126c42e705b">07e5c602dbed40101ed2c4ab0b9619dc</sys_ui_form>
-            <sys_ui_section caption="Add Doctor" display_value="Add Doctor" name="x_423236_health_ca_add_doctor_staff" sys_domain="global" view="3e5370019f22120047a2d126c42e705b">c3e54682dbed40101ed2c4ab0b96194b</sys_ui_section>
+            <sys_ui_section caption="Add Staff" display_value="Add Staff" name="x_423236_health_ca_add_doctor_staff" sys_domain="global" view="3e5370019f22120047a2d126c42e705b">c3e54682dbed40101ed2c4ab0b96194b</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2019-12-07 15:25:37</sys_updated_on>
         </sys_ui_form_section>

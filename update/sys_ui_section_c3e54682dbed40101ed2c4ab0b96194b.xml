@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_ui_section caption="Add Doctor" section_id="c3e54682dbed40101ed2c4ab0b96194b" sys_domain="global" table="x_423236_health_ca_add_doctor_staff" version="3" view="human_resources">
+    <sys_ui_section caption="Add Staff" section_id="c3e54682dbed40101ed2c4ab0b96194b" sys_domain="global" table="x_423236_health_ca_add_doctor_staff" version="3" view="human_resources">
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>introduction</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-12-08 06:50:46</sys_created_on>
-            <sys_id>07a95992db6d80101ed2c4ab0b9619e6</sys_id>
+            <sys_created_on>2019-12-10 08:23:15</sys_created_on>
+            <sys_id>65024c0bdba944101ed2c4ab0b961952</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Add Doctor" display_value="Add Doctor" name="x_423236_health_ca_add_doctor_staff" sys_domain="global" view="3e5370019f22120047a2d126c42e705b">c3e54682dbed40101ed2c4ab0b96194b</sys_ui_section>
+            <sys_ui_section caption="Add Staff" display_value="Add Staff" name="x_423236_health_ca_add_doctor_staff" sys_domain="global" view="3e5370019f22120047a2d126c42e705b">c3e54682dbed40101ed2c4ab0b96194b</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-12-08 06:50:46</sys_updated_on>
+            <sys_updated_on>2019-12-10 08:23:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>first_name</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-12-08 06:50:46</sys_created_on>
-            <sys_id>8fa95992db6d80101ed2c4ab0b9619e6</sys_id>
+            <sys_created_on>2019-12-10 08:23:15</sys_created_on>
+            <sys_id>ed024c0bdba944101ed2c4ab0b961952</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Add Doctor" display_value="Add Doctor" name="x_423236_health_ca_add_doctor_staff" sys_domain="global" view="3e5370019f22120047a2d126c42e705b">c3e54682dbed40101ed2c4ab0b96194b</sys_ui_section>
+            <sys_ui_section caption="Add Staff" display_value="Add Staff" name="x_423236_health_ca_add_doctor_staff" sys_domain="global" view="3e5370019f22120047a2d126c42e705b">c3e54682dbed40101ed2c4ab0b96194b</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-12-08 06:50:46</sys_updated_on>
+            <sys_updated_on>2019-12-10 08:23:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>middle_name</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-12-08 06:50:46</sys_created_on>
-            <sys_id>07a95992db6d80101ed2c4ab0b9619e7</sys_id>
+            <sys_created_on>2019-12-10 08:23:15</sys_created_on>
+            <sys_id>65024c0bdba944101ed2c4ab0b961953</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Add Doctor" display_value="Add Doctor" name="x_423236_health_ca_add_doctor_staff" sys_domain="global" view="3e5370019f22120047a2d126c42e705b">c3e54682dbed40101ed2c4ab0b96194b</sys_ui_section>
+            <sys_ui_section caption="Add Staff" display_value="Add Staff" name="x_423236_health_ca_add_doctor_staff" sys_domain="global" view="3e5370019f22120047a2d126c42e705b">c3e54682dbed40101ed2c4ab0b96194b</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-12-08 06:50:46</sys_updated_on>
+            <sys_updated_on>2019-12-10 08:23:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>last_name</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-12-08 06:50:46</sys_created_on>
-            <sys_id>8ba95992db6d80101ed2c4ab0b9619e7</sys_id>
+            <sys_created_on>2019-12-10 08:23:15</sys_created_on>
+            <sys_id>e9024c0bdba944101ed2c4ab0b961953</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Add Doctor" display_value="Add Doctor" name="x_423236_health_ca_add_doctor_staff" sys_domain="global" view="3e5370019f22120047a2d126c42e705b">c3e54682dbed40101ed2c4ab0b96194b</sys_ui_section>
+            <sys_ui_section caption="Add Staff" display_value="Add Staff" name="x_423236_health_ca_add_doctor_staff" sys_domain="global" view="3e5370019f22120047a2d126c42e705b">c3e54682dbed40101ed2c4ab0b96194b</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-12-08 06:50:46</sys_updated_on>
+            <sys_updated_on>2019-12-10 08:23:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -60,13 +60,13 @@
             <element>active</element>
             <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-12-08 06:50:46</sys_created_on>
-            <sys_id>03a95992db6d80101ed2c4ab0b9619e8</sys_id>
+            <sys_created_on>2019-12-10 08:23:15</sys_created_on>
+            <sys_id>61024c0bdba944101ed2c4ab0b961954</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Add Doctor" display_value="Add Doctor" name="x_423236_health_ca_add_doctor_staff" sys_domain="global" view="3e5370019f22120047a2d126c42e705b">c3e54682dbed40101ed2c4ab0b96194b</sys_ui_section>
+            <sys_ui_section caption="Add Staff" display_value="Add Staff" name="x_423236_health_ca_add_doctor_staff" sys_domain="global" view="3e5370019f22120047a2d126c42e705b">c3e54682dbed40101ed2c4ab0b96194b</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-12-08 06:50:46</sys_updated_on>
+            <sys_updated_on>2019-12-10 08:23:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -74,13 +74,13 @@
             <element>.split</element>
             <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-12-08 06:50:46</sys_created_on>
-            <sys_id>87a95992db6d80101ed2c4ab0b9619e8</sys_id>
+            <sys_created_on>2019-12-10 08:23:15</sys_created_on>
+            <sys_id>e5024c0bdba944101ed2c4ab0b961954</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Add Doctor" display_value="Add Doctor" name="x_423236_health_ca_add_doctor_staff" sys_domain="global" view="3e5370019f22120047a2d126c42e705b">c3e54682dbed40101ed2c4ab0b96194b</sys_ui_section>
+            <sys_ui_section caption="Add Staff" display_value="Add Staff" name="x_423236_health_ca_add_doctor_staff" sys_domain="global" view="3e5370019f22120047a2d126c42e705b">c3e54682dbed40101ed2c4ab0b96194b</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-12-08 06:50:46</sys_updated_on>
+            <sys_updated_on>2019-12-10 08:23:15</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -88,13 +88,13 @@
             <element>user_name</element>
             <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-12-08 06:50:46</sys_created_on>
-            <sys_id>0fa95992db6d80101ed2c4ab0b9619e8</sys_id>
+            <sys_created_on>2019-12-10 08:23:15</sys_created_on>
+            <sys_id>6d024c0bdba944101ed2c4ab0b961954</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Add Doctor" display_value="Add Doctor" name="x_423236_health_ca_add_doctor_staff" sys_domain="global" view="3e5370019f22120047a2d126c42e705b">c3e54682dbed40101ed2c4ab0b96194b</sys_ui_section>
+            <sys_ui_section caption="Add Staff" display_value="Add Staff" name="x_423236_health_ca_add_doctor_staff" sys_domain="global" view="3e5370019f22120047a2d126c42e705b">c3e54682dbed40101ed2c4ab0b96194b</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-12-08 06:50:46</sys_updated_on>
+            <sys_updated_on>2019-12-10 08:23:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -102,13 +102,13 @@
             <element>employee_number</element>
             <position>7</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-12-08 06:50:46</sys_created_on>
-            <sys_id>83a95992db6d80101ed2c4ab0b9619e9</sys_id>
+            <sys_created_on>2019-12-10 08:23:15</sys_created_on>
+            <sys_id>e1024c0bdba944101ed2c4ab0b961955</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Add Doctor" display_value="Add Doctor" name="x_423236_health_ca_add_doctor_staff" sys_domain="global" view="3e5370019f22120047a2d126c42e705b">c3e54682dbed40101ed2c4ab0b96194b</sys_ui_section>
+            <sys_ui_section caption="Add Staff" display_value="Add Staff" name="x_423236_health_ca_add_doctor_staff" sys_domain="global" view="3e5370019f22120047a2d126c42e705b">c3e54682dbed40101ed2c4ab0b96194b</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-12-08 06:50:46</sys_updated_on>
+            <sys_updated_on>2019-12-10 08:23:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -116,13 +116,13 @@
             <element>gender</element>
             <position>8</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-12-08 06:50:46</sys_created_on>
-            <sys_id>0ba95992db6d80101ed2c4ab0b9619e9</sys_id>
+            <sys_created_on>2019-12-10 08:23:15</sys_created_on>
+            <sys_id>69024c0bdba944101ed2c4ab0b961955</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Add Doctor" display_value="Add Doctor" name="x_423236_health_ca_add_doctor_staff" sys_domain="global" view="3e5370019f22120047a2d126c42e705b">c3e54682dbed40101ed2c4ab0b96194b</sys_ui_section>
+            <sys_ui_section caption="Add Staff" display_value="Add Staff" name="x_423236_health_ca_add_doctor_staff" sys_domain="global" view="3e5370019f22120047a2d126c42e705b">c3e54682dbed40101ed2c4ab0b96194b</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-12-08 06:50:46</sys_updated_on>
+            <sys_updated_on>2019-12-10 08:23:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -130,18 +130,18 @@
             <element>photo</element>
             <position>9</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-12-08 06:50:46</sys_created_on>
-            <sys_id>8fa95992db6d80101ed2c4ab0b9619e9</sys_id>
+            <sys_created_on>2019-12-10 08:23:15</sys_created_on>
+            <sys_id>ed024c0bdba944101ed2c4ab0b961955</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Add Doctor" display_value="Add Doctor" name="x_423236_health_ca_add_doctor_staff" sys_domain="global" view="3e5370019f22120047a2d126c42e705b">c3e54682dbed40101ed2c4ab0b96194b</sys_ui_section>
+            <sys_ui_section caption="Add Staff" display_value="Add Staff" name="x_423236_health_ca_add_doctor_staff" sys_domain="global" view="3e5370019f22120047a2d126c42e705b">c3e54682dbed40101ed2c4ab0b96194b</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-12-08 06:50:46</sys_updated_on>
+            <sys_updated_on>2019-12-10 08:23:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
-            <caption>Add Doctor</caption>
+            <caption>Add Staff</caption>
             <header>false</header>
             <name>x_423236_health_ca_add_doctor_staff</name>
             <roles/>
@@ -151,15 +151,15 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>c3e54682dbed40101ed2c4ab0b96194b</sys_id>
-            <sys_mod_count>1</sys_mod_count>
-            <sys_name>Add Doctor</sys_name>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_name>Add Staff</sys_name>
             <sys_overrides/>
             <sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package>
             <sys_policy/>
             <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
             <sys_update_name>sys_ui_section_c3e54682dbed40101ed2c4ab0b96194b</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-12-07 15:26:49</sys_updated_on>
+            <sys_updated_on>2019-12-10 08:23:14</sys_updated_on>
             <sys_user/>
             <title>false</title>
             <view display_value="Human Resources" name="human_resources">3e5370019f22120047a2d126c42e705b</view>

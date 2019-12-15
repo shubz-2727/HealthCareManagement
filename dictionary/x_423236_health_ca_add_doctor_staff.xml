@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="sys_user" label="doctor / staff" max_length="40" name="x_423236_health_ca_add_doctor_staff" type="collection">
+    <element extends="sys_user" label="Staff" max_length="40" name="x_423236_health_ca_add_doctor_staff" type="collection">
         <element label="From" max_length="40" name="u_glide_time_1" type="glide_time"/>
         <element label="TO" max_length="40" name="u_glide_time_2" type="glide_time"/>
     </element>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Relative Info" section_id="057c640fdb6d44101ed2c4ab0b9619c3" sys_domain="global" table="sys_user" version="3" view="Patient">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_first_name</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-12-10 11:33:03</sys_created_on>
+            <sys_id>297da84fdb6d44101ed2c4ab0b96195a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Relative Info" display_value="Relative Info" name="sys_user" sys_domain="global" view="cd7c640fdb6d44101ed2c4ab0b9619be">057c640fdb6d44101ed2c4ab0b9619c3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-12-10 11:33:03</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-12-10 11:33:03</sys_created_on>
+            <sys_id>ad7da84fdb6d44101ed2c4ab0b96195a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Relative Info" display_value="Relative Info" name="sys_user" sys_domain="global" view="cd7c640fdb6d44101ed2c4ab0b9619be">057c640fdb6d44101ed2c4ab0b9619c3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-12-10 11:33:03</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Relative Info</caption>
+            <header>false</header>
+            <name>sys_user</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-12-10 11:28:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>057c640fdb6d44101ed2c4ab0b9619c3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Relative Info</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
+            <sys_update_name>sys_ui_section_057c640fdb6d44101ed2c4ab0b9619c3</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-12-10 11:28:39</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Patient" name="Patient">cd7c640fdb6d44101ed2c4ab0b9619be</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

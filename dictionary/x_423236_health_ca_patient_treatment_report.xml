@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="task" label="Patient Treatment report" max_length="40" name="x_423236_health_ca_patient_treatment_report" type="collection">
+    <element extends="task" label="Patient Treatment report" max_length="40" name="x_423236_health_ca_patient_treatment_report" sizeclass="1" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Blood group" max_length="40" name="u_blood_group" type="string"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Test" max_length="40" name="u_choice_9" type="string">
             <choice>
                 <element inactive_on_update="false" label="Blood Test" sequence="0" value="blood test"/>
@@ -7,7 +8,8 @@
             </choice>
         </element>
         <element label="Add report" max_length="40" name="u_file_attachment_8" type="file_attachment"/>
-        <element attributes="encode_utf8=false" label="User ID" max_length="32" name="u_reference_1" reference="x_423236_health_ca_patient" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="MRN No." max_length="40" name="u_mrn" type="string"/>
+        <element attributes="encode_utf8=false" label="MRN No." max_length="32" name="u_reference_1" reference="x_423236_health_ca_patient" type="reference"/>
         <element attributes="encode_utf8=false" label="Doctor" max_length="32" name="u_reference_6" reference="x_423236_health_ca_add_doctor_staff" type="reference"/>
         <element attributes="encode_utf8=false" label="Doctor" max_length="32" name="u_reference_7" reference="x_423236_health_ca_add_doctor_staff" type="reference"/>
         <element attributes="edge_encryption_enabled=true" label="Short description" max_length="500" name="u_string_10" type="string"/>

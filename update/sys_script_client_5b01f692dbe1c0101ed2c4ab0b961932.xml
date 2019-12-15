@@ -14,16 +14,18 @@
    if (isLoading || newValue === '') {
       return;
    }
+	
 
 		// Instantiate the GetEmailAddress Script Include
 	var getPatientdetail = new GlideAjax('GetPatientDetail');
 	// Specify the getEmail method
 	getPatientdetail.addParam('sysparm_name','getPatient');
 	// Pass the Requested for sys_id
-	getPatientdetail.addParam('user_name', g_form.getValue('u_reference_1'));
+	getPatientdetail.addParam('sys_id', g_form.getValue('u_reference_1'));
 	// Send the request to the server
 	getPatientdetail.getXML(populateField);
    
+	
 
 	// When the response is back from the server
 	function populateField(response){
@@ -31,10 +33,14 @@
     	// set new value in the email field
     	var patient = response.responseXML.documentElement.getAttribute("answer");
 		g_form.addInfoMessage(patient);
-        patient = patient.evalJSON(); 
-        g_form.clearValue('u_string_2');
-        g_form.setValue('u_string_2',patient.fn);
-		g_form.addInfoMessage(patient);
+        
+		var data = JSON.parse(patient);
+		g_form.clearValue('u_string_2');
+        g_form.setValue('u_string_2',data.fn);
+		g_form.setValue('u_string_3',data.ln);
+		g_form.setValue('u_blood_group',data.bloodGr);
+		g_form.setValue('u_mrn',data.mrn);
+	
 		
 	}
 
@@ -47,7 +53,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>5b01f692dbe1c0101ed2c4ab0b961932</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_name>Populate name field report</sys_name>
         <sys_overrides/>
         <sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package>
@@ -55,7 +61,7 @@
         <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
         <sys_update_name>sys_script_client_5b01f692dbe1c0101ed2c4ab0b961932</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-08 14:42:48</sys_updated_on>
+        <sys_updated_on>2019-12-11 12:47:36</sys_updated_on>
         <table>x_423236_health_ca_patient_treatment_report</table>
         <type>onChange</type>
         <ui_type>0</ui_type>

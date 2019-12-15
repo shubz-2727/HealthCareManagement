@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_view">
+    <sys_ui_view action="INSERT_OR_UPDATE">
+        <group/>
+        <hidden>false</hidden>
+        <name>Patient</name>
+        <roles/>
+        <sys_class_name>sys_ui_view</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-10 11:28:39</sys_created_on>
+        <sys_id>cd7c640fdb6d44101ed2c4ab0b9619be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Patient</sys_name>
+        <sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
+        <sys_update_name>sys_ui_view_cd7c640fdb6d44101ed2c4ab0b9619be</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-10 11:28:39</sys_updated_on>
+        <title>Patient</title>
+        <user/>
+    </sys_ui_view>
+</record_update>

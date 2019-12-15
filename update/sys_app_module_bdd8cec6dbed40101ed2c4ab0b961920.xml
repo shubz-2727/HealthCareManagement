@@ -17,14 +17,14 @@
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
-        <roles>x_423236_health_ca.patient_user,x_423236_health_ca.staff</roles>
+        <roles>x_423236_health_ca.staff</roles>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-12-07 15:40:45</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>bdd8cec6dbed40101ed2c4ab0b961920</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Patient registration</sys_name>
         <sys_overrides/>
         <sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package>
@@ -32,7 +32,7 @@
         <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
         <sys_update_name>sys_app_module_bdd8cec6dbed40101ed2c4ab0b961920</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-07 15:41:23</sys_updated_on>
+        <sys_updated_on>2019-12-11 12:21:31</sys_updated_on>
         <timeline_page/>
         <title>Patient registration</title>
         <uncancelable>false</uncancelable>

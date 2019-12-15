@@ -1,200 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="Contact Details" section_id="44f74e86dbed40101ed2c4ab0b9619fa" sys_domain="global" table="x_423236_health_ca_patient" version="3" view="human_resources">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.begin_split</element>
+            <element>street</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-12-07 15:34:25</sys_created_on>
-            <sys_id>84f74e86dbed40101ed2c4ab0b9619fb</sys_id>
+            <sys_created_on>2019-12-11 07:05:54</sys_created_on>
+            <sys_id>82e9b09fdbed84101ed2c4ab0b96195e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Contact Details" display_value="Contact Details" name="x_423236_health_ca_patient" sys_domain="global" view="3e5370019f22120047a2d126c42e705b">44f74e86dbed40101ed2c4ab0b9619fa</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-12-07 15:34:25</sys_updated_on>
-            <sys_user/>
-            <type>.begin_split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>building</element>
-            <position>1</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-12-07 15:34:25</sys_created_on>
-            <sys_id>0cf74e86dbed40101ed2c4ab0b9619fb</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Contact Details" display_value="Contact Details" name="x_423236_health_ca_patient" sys_domain="global" view="3e5370019f22120047a2d126c42e705b">44f74e86dbed40101ed2c4ab0b9619fa</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-12-07 15:34:25</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>street</element>
-            <position>2</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-12-07 15:34:25</sys_created_on>
-            <sys_id>80f74e86dbed40101ed2c4ab0b9619fc</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Contact Details" display_value="Contact Details" name="x_423236_health_ca_patient" sys_domain="global" view="3e5370019f22120047a2d126c42e705b">44f74e86dbed40101ed2c4ab0b9619fa</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-12-07 15:34:25</sys_updated_on>
+            <sys_updated_on>2019-12-11 07:05:54</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>city</element>
-            <position>3</position>
+            <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-12-07 15:34:25</sys_created_on>
-            <sys_id>08f74e86dbed40101ed2c4ab0b9619fc</sys_id>
+            <sys_created_on>2019-12-11 07:05:54</sys_created_on>
+            <sys_id>0ae9b09fdbed84101ed2c4ab0b96195e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Contact Details" display_value="Contact Details" name="x_423236_health_ca_patient" sys_domain="global" view="3e5370019f22120047a2d126c42e705b">44f74e86dbed40101ed2c4ab0b9619fa</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-12-07 15:34:25</sys_updated_on>
+            <sys_updated_on>2019-12-11 07:05:54</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>state</element>
-            <position>4</position>
+            <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-12-07 15:34:25</sys_created_on>
-            <sys_id>8cf74e86dbed40101ed2c4ab0b9619fc</sys_id>
+            <sys_created_on>2019-12-11 07:05:54</sys_created_on>
+            <sys_id>8ee9b09fdbed84101ed2c4ab0b96195e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Contact Details" display_value="Contact Details" name="x_423236_health_ca_patient" sys_domain="global" view="3e5370019f22120047a2d126c42e705b">44f74e86dbed40101ed2c4ab0b9619fa</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-12-07 15:34:25</sys_updated_on>
+            <sys_updated_on>2019-12-11 07:05:54</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>zip</element>
-            <position>5</position>
+            <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-12-07 15:34:25</sys_created_on>
-            <sys_id>04f74e86dbed40101ed2c4ab0b9619fd</sys_id>
+            <sys_created_on>2019-12-11 07:05:54</sys_created_on>
+            <sys_id>06e9b09fdbed84101ed2c4ab0b96195f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Contact Details" display_value="Contact Details" name="x_423236_health_ca_patient" sys_domain="global" view="3e5370019f22120047a2d126c42e705b">44f74e86dbed40101ed2c4ab0b9619fa</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-12-07 15:34:25</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>country</element>
-            <position>6</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-12-07 15:34:25</sys_created_on>
-            <sys_id>88f74e86dbed40101ed2c4ab0b9619fd</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Contact Details" display_value="Contact Details" name="x_423236_health_ca_patient" sys_domain="global" view="3e5370019f22120047a2d126c42e705b">44f74e86dbed40101ed2c4ab0b9619fa</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-12-07 15:34:25</sys_updated_on>
+            <sys_updated_on>2019-12-11 07:05:54</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>7</position>
+            <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-12-07 15:34:25</sys_created_on>
-            <sys_id>00f74e86dbed40101ed2c4ab0b9619fe</sys_id>
+            <sys_created_on>2019-12-11 07:05:54</sys_created_on>
+            <sys_id>8ae9b09fdbed84101ed2c4ab0b96195f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Contact Details" display_value="Contact Details" name="x_423236_health_ca_patient" sys_domain="global" view="3e5370019f22120047a2d126c42e705b">44f74e86dbed40101ed2c4ab0b9619fa</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-12-07 15:34:25</sys_updated_on>
+            <sys_updated_on>2019-12-11 07:05:54</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>location</element>
-            <position>8</position>
+            <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-12-07 15:34:25</sys_created_on>
-            <sys_id>84f74e86dbed40101ed2c4ab0b9619fe</sys_id>
+            <sys_created_on>2019-12-11 07:05:54</sys_created_on>
+            <sys_id>02e9b09fdbed84101ed2c4ab0b961960</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Contact Details" display_value="Contact Details" name="x_423236_health_ca_patient" sys_domain="global" view="3e5370019f22120047a2d126c42e705b">44f74e86dbed40101ed2c4ab0b9619fa</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-12-07 15:34:25</sys_updated_on>
+            <sys_updated_on>2019-12-11 07:05:54</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>email</element>
-            <position>9</position>
+            <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-12-07 15:34:25</sys_created_on>
-            <sys_id>0cf74e86dbed40101ed2c4ab0b9619fe</sys_id>
+            <sys_created_on>2019-12-11 07:05:54</sys_created_on>
+            <sys_id>86e9b09fdbed84101ed2c4ab0b961960</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Contact Details" display_value="Contact Details" name="x_423236_health_ca_patient" sys_domain="global" view="3e5370019f22120047a2d126c42e705b">44f74e86dbed40101ed2c4ab0b9619fa</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-12-07 15:34:25</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>phone</element>
-            <position>10</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-12-07 15:34:25</sys_created_on>
-            <sys_id>80f74e86dbed40101ed2c4ab0b9619ff</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Contact Details" display_value="Contact Details" name="x_423236_health_ca_patient" sys_domain="global" view="3e5370019f22120047a2d126c42e705b">44f74e86dbed40101ed2c4ab0b9619fa</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-12-07 15:34:25</sys_updated_on>
+            <sys_updated_on>2019-12-11 07:05:54</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>mobile_phone</element>
-            <position>11</position>
+            <position>7</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-12-07 15:34:25</sys_created_on>
-            <sys_id>08f74e86dbed40101ed2c4ab0b9619ff</sys_id>
+            <sys_created_on>2019-12-11 07:05:54</sys_created_on>
+            <sys_id>0ee9b09fdbed84101ed2c4ab0b961960</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Contact Details" display_value="Contact Details" name="x_423236_health_ca_patient" sys_domain="global" view="3e5370019f22120047a2d126c42e705b">44f74e86dbed40101ed2c4ab0b9619fa</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-12-07 15:34:25</sys_updated_on>
+            <sys_updated_on>2019-12-11 07:05:54</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>home_phone</element>
-            <position>12</position>
+            <position>8</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-12-07 15:34:25</sys_created_on>
-            <sys_id>8cf74e86dbed40101ed2c4ab0b9619ff</sys_id>
+            <sys_created_on>2019-12-11 07:05:54</sys_created_on>
+            <sys_id>82e9b09fdbed84101ed2c4ab0b961961</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Contact Details" display_value="Contact Details" name="x_423236_health_ca_patient" sys_domain="global" view="3e5370019f22120047a2d126c42e705b">44f74e86dbed40101ed2c4ab0b9619fa</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-12-07 15:34:25</sys_updated_on>
+            <sys_updated_on>2019-12-11 07:05:54</sys_updated_on>
             <sys_user/>
             <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.end_split</element>
-            <position>13</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-12-07 15:34:25</sys_created_on>
-            <sys_id>04f78e86dbed40101ed2c4ab0b961900</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Contact Details" display_value="Contact Details" name="x_423236_health_ca_patient" sys_domain="global" view="3e5370019f22120047a2d126c42e705b">44f74e86dbed40101ed2c4ab0b9619fa</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-12-07 15:34:25</sys_updated_on>
-            <sys_user/>
-            <type>.end_split</type>
         </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption>Contact Details</caption>

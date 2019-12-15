@@ -11,19 +11,43 @@
 GetPatientDetail.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 
 	getPatient: function() {
-    	var userRecord = new GlideRecord("x_423236_health_ca_patient");
-    	userRecord.get(this.getParameter('user_name'));
 		
-		 var obj = {};
-         obj.fn = userRecord.getValue('first_name');
-         obj.ln = userRecord.getValue('last_name');
+				 var obj = {
+					 fn : " ",
+					 ln : " ",
+					 email : " " ,
+					 bloodGr : " ",
+					 mrn : " "
+				 };
+		
+		 var gr = new GlideRecord('sys_user');
+		 var name = this.getParameter('sys_id');
+             gr.query("sys_id",name);
+				  if (gr.next()) {
+				
+					  
+					    obj.fn = gr.getValue('first_name');
+					  
+                      obj.ln = gr.getValue('last_name');
+					   obj.email = gr.getValue('email');
+					   obj.bloodGr = gr.getValue('u_choice_6')
+					   obj.mrn  = gr.getValue('number');
+		 
 
+			  }
+		
+		
+		
+		
 
-         var json = new JSON();
-         var data = json.encode(obj);//JSON formatted string                       
+    	
+		
+		
+
+                              
+         return JSON.stringify(obj);
          
-         
-    	return data;
+    	
 	},
 
 	
@@ -33,13 +57,13 @@ GetPatientDetail.prototype = Object.extendsObject(global.AbstractAjaxProcessor, 
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-12-08 13:17:21</sys_created_on>
         <sys_id>91c17616dbe1c0101ed2c4ab0b961955</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>32</sys_mod_count>
         <sys_name>GetPatientDetail</sys_name>
         <sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
         <sys_update_name>sys_script_include_91c17616dbe1c0101ed2c4ab0b961955</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-08 14:33:55</sys_updated_on>
+        <sys_updated_on>2019-12-11 12:37:13</sys_updated_on>
     </sys_script_include>
 </record_update>

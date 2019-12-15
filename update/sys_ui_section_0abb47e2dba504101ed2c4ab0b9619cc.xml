@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="0abb47e2dba504101ed2c4ab0b9619cc" sys_domain="global" table="x_423236_health_ca_add_doctor_staff" version="3" view="Doctor">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>user_name</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-12-09 09:47:32</sys_created_on>
+            <sys_id>0abb47e2dba504101ed2c4ab0b9619cd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_423236_health_ca_add_doctor_staff" sys_domain="global" view="7f35726adb2504101ed2c4ab0b961911">0abb47e2dba504101ed2c4ab0b9619cc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-12-09 09:47:32</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>introduction</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-12-09 09:47:32</sys_created_on>
+            <sys_id>8ebb47e2dba504101ed2c4ab0b9619cd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_423236_health_ca_add_doctor_staff" sys_domain="global" view="7f35726adb2504101ed2c4ab0b961911">0abb47e2dba504101ed2c4ab0b9619cc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-12-09 09:47:32</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>first_name</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-12-09 09:47:32</sys_created_on>
+            <sys_id>06bb47e2dba504101ed2c4ab0b9619ce</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_423236_health_ca_add_doctor_staff" sys_domain="global" view="7f35726adb2504101ed2c4ab0b961911">0abb47e2dba504101ed2c4ab0b9619cc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-12-09 09:47:32</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>last_name</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-12-09 09:47:32</sys_created_on>
+            <sys_id>8abb47e2dba504101ed2c4ab0b9619ce</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_423236_health_ca_add_doctor_staff" sys_domain="global" view="7f35726adb2504101ed2c4ab0b961911">0abb47e2dba504101ed2c4ab0b9619cc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-12-09 09:47:32</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-12-09 09:47:32</sys_created_on>
+            <sys_id>02bb47e2dba504101ed2c4ab0b9619cf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_423236_health_ca_add_doctor_staff" sys_domain="global" view="7f35726adb2504101ed2c4ab0b961911">0abb47e2dba504101ed2c4ab0b9619cc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-12-09 09:47:32</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>email</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-12-09 09:47:32</sys_created_on>
+            <sys_id>86bb47e2dba504101ed2c4ab0b9619cf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_423236_health_ca_add_doctor_staff" sys_domain="global" view="7f35726adb2504101ed2c4ab0b961911">0abb47e2dba504101ed2c4ab0b9619cc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-12-09 09:47:32</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>active</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-12-09 09:47:32</sys_created_on>
+            <sys_id>0ebb47e2dba504101ed2c4ab0b9619cf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_423236_health_ca_add_doctor_staff" sys_domain="global" view="7f35726adb2504101ed2c4ab0b961911">0abb47e2dba504101ed2c4ab0b9619cc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-12-09 09:47:32</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_423236_health_ca_add_doctor_staff</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-12-09 09:47:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0abb47e2dba504101ed2c4ab0b9619cc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_423236_health_ca_add_doctor_staff</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
+            <sys_update_name>sys_ui_section_0abb47e2dba504101ed2c4ab0b9619cc</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-12-09 09:47:32</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Doctor" name="Doctor">7f35726adb2504101ed2c4ab0b961911</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

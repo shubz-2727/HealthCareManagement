@@ -7,14 +7,14 @@
         <hint/>
         <name/>
         <order>100</order>
-        <roles>x_423236_health_ca.admin,x_423236_health_ca.doctor,x_423236_health_ca.staff</roles>
+        <roles>x_423236_health_ca.admin,x_423236_health_ca.doctor,x_423236_health_ca.staff,x_423236_health_ca.Patient</roles>
         <sys_class_name>sys_app_application</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-12-07 15:28:09</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>42460e82dbed40101ed2c4ab0b9619ef</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Health Care</sys_name>
         <sys_overrides/>
         <sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package>
@@ -22,7 +22,7 @@
         <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
         <sys_update_name>sys_app_application_42460e82dbed40101ed2c4ab0b9619ef</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-07 15:28:09</sys_updated_on>
+        <sys_updated_on>2019-12-10 09:28:03</sys_updated_on>
         <title>Health Care</title>
         <view_name/>
     </sys_app_application>
