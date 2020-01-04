@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rel_widget_clone">
+    <sp_rel_widget_clone action="INSERT_OR_UPDATE">
+        <child display_value="External_registration">bd145ba9db0200101ed2c4ab0b9619fd</child>
+        <cloned>2019-12-31 04:21:33</cloned>
+        <last_validated>2019-12-31 04:21:33</last_validated>
+        <parent display_value="External User Registration Content">61238ce93bc73200b5c42479b3efc4dd</parent>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;sp_widget&gt;&lt;category/&gt;&lt;client_script&gt;&lt;![CDATA[function() {
+  /* widget controller */
+  var c = this;
+
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.reg-body{
+  background: $brand-primary;
+  padding: 20px;
+  margin:20px;
+}
+
+#regstr-content .sign-up {
+  font-family: Roboto;
+  height: 29px;
+  width: 87px;
+  color: #FFFFFF;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 29px;
+  margin-bottom:10px;
+}
+
+
+
+#regstr-content .panel-sub-text {
+  font-family: Roboto;
+  height: 21px;	
+  width: 328px;
+  color: #FFFFFF;
+  font-size: 18px;	
+  font-style: italic;
+  font-weight: 200;	
+  line-height: 21px;
+  margin-bottom:28px;
+}
+
+.icon-image{
+
+  width: 23px;
+  color: #FFFFFF;
+  font-family: FontAwesome;
+  font-size: 26px;
+  line-height: 26px;
+  text-align: center;
+  /*position:absolute;*/
+
+}
+
+.section-label{
+  font-family: Roboto;
+  padding-bottom:5px;
+  height: 24px;
+  width: 35px;
+  color: #FFFFFF;
+  font-size: 20px;
+  /* font-weight: 500;*/
+  line-height: 24px;
+  margin-bottom:5px;
+
+}
+
+.icon-txt{
+  display: table-cell; 
+  vertical-align: top;
+  font-family: Roboto;
+  padding-left:28px; 
+  padding-bottom:30px;
+  vertical-align: top;
+}
+
+.section-text {
+  font-family: Roboto;
+  height: 36px;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight:200;
+  line-height: 18px;
+
+}
+
+.panel-body {
+  .icon-image {
+    float: left;
+    margin-right: 10px;
+  }
+  .icon-txt {
+    display: inline-block;
+    width: 90%;
+  }
+}
+&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id/&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;External User Registration Content&lt;/name&gt;&lt;option_schema&gt;[{"name":"panel_type","default_value":"default","type":"string"},&amp;#13;
+{"name":"content_header","default_value":"Sign Up","type":"string"},&amp;#13;
+{"name":"content_sub_header", "default_value":"Once you sign up, you can:", "type":"string"},&amp;#13;
+{"name":"icon_list", "default_value":[&amp;#13;
+],"type":"string"}]&lt;/option_schema&gt;&lt;public&gt;true&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+	data.iconsList = [];
+	var instace_err=gs.getMessage("Please define the instance options");
+	//header
+	data.header = options.content_header || gs.getMessage('Sign Up');
+	data.message = options.content_sub_header || gs.getMessage('Once you sign up, you can:');
+	var icon_array=options.icon_list;
+	if(icon_array){
+		data.iconsList=JSON.parse(icon_array);
+	}else{
+		gs.addErrorMessage(instace_err);
+	}
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-05-30 01:15:50&lt;/sys_created_on&gt;&lt;sys_id&gt;61238ce93bc73200b5c42479b3efc4dd&lt;/sys_id&gt;&lt;sys_mod_count&gt;428&lt;/sys_mod_count&gt;&lt;sys_name&gt;External User Registration Content&lt;/sys_name&gt;&lt;sys_package display_value="External User Registration" source="sn_ext_usr_reg"&gt;9e42ed323b923200b5c42479b3efc4bd&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="External User Registration"&gt;9e42ed323b923200b5c42479b3efc4bd&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_61238ce93bc73200b5c42479b3efc4dd&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-01-31 13:08:36&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="hidden-sm hidden-xs panel panel-{{::options.panel_type}} reg-body csm-tile csm-widget-tile csm-widget"&gt;
+  &lt;div id="regstr-content" class="panel-body"&gt;
+    &lt;h4 class="panel-title sign-up"&gt; ${{{ ::data.header }}}
+    &lt;/h4&gt;
+    &lt;h5 class="panel-sub-text"&gt;${{{ ::data.message }}}&lt;/h5&gt;
+    &lt;ul  class="list-unstyled" &gt;
+      &lt;li class="" ng-repeat="icon in data.iconsList"&gt;
+          &lt;i class="icon-image fa {{icon.iconClass}}" aria-hidden="true"&gt;&lt;/i&gt;
+        &lt;div class="icon-txt"&gt;
+          &lt;p class="section-label"&gt;${{{icon.title}}}&lt;/p&gt;
+          &lt;p class="section-text"&gt;${{{icon.text}}}&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;</payload>
+        <sys_class_name>sp_rel_widget_clone</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-31 04:21:33</sys_created_on>
+        <sys_id>7914d32ddb0200101ed2c4ab0b961975</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>bd145ba9db0200101ed2c4ab0b9619fd</sys_name>
+        <sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
+        <sys_update_name>sp_rel_widget_clone_7914d32ddb0200101ed2c4ab0b961975</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-31 04:21:33</sys_updated_on>
+    </sp_rel_widget_clone>
+</record_update>

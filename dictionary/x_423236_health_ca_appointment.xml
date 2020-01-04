@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="task" label="Appointment" max_length="40" name="x_423236_health_ca_appointment" sizeclass="11" type="collection">
+    <element extends="task" label="Appointment" max_length="40" name="x_423236_health_ca_appointment" sizeclass="12" type="collection">
         <element attributes="edge_encryption_enabled=true" label="Set appointment" max_length="40" name="u_calendar_date_time_6" type="calendar_date_time"/>
         <element attributes="edge_encryption_enabled=true" label="Date" max_length="40" name="u_date" type="glide_date"/>
         <element label="Email" max_length="40" name="u_email_2" type="email"/>

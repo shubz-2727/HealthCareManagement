@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>3</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">ded25ba9db0200101ed2c4ab0b9619f4</sp_column>
+        <sp_widget display_value="HRJ Case Acceptance">84b2d9550b10320005b16f3ef6673a7f</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-31 04:25:07</sys_created_on>
+        <sys_id>8ae4d32ddb0200101ed2c4ab0b961972</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
+        <sys_update_name>sp_instance_8ae4d32ddb0200101ed2c4ab0b961972</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-31 04:25:07</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters/>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=8ae4d32ddb0200101ed2c4ab0b961972"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</application>
+        <file_path/>
+        <instance_id>0dfc6f02db7bbb008aea21c4059619eb</instance_id>
+        <instance_name>dev93413</instance_name>
+        <name>sp_instance_8ae4d32ddb0200101ed2c4ab0b961972</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>3</order><roles/><short_description/><size>md</size><sp_column display_value="1">ded25ba9db0200101ed2c4ab0b9619f4</sp_column><sp_widget display_value="HRJ Case Acceptance">84b2d9550b10320005b16f3ef6673a7f</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2019-12-31 04:25:07</sys_created_on><sys_id>8ae4d32ddb0200101ed2c4ab0b961972</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package><sys_policy/><sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope><sys_update_name>sp_instance_8ae4d32ddb0200101ed2c4ab0b961972</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-12-31 04:25:07</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=8ae4d32ddb0200101ed2c4ab0b961972"/></record_update>]]></payload>
+        <payload_hash>893534352</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>f8758a42dbed40101ed2c4ab0b96190c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-31 04:25:07</sys_created_on>
+        <sys_id>cae4d36ddb0200101ed2c4ab0b961995</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16f5a3348470000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-31 04:25:07</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>02e4d32d1302001082ab491d18564174</update_guid>
+        <update_guid_history>02e4d32d1302001082ab491d18564174:893534352</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">ea451b6ddb0200101ed2c4ab0b961948</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-31 04:26:47</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>688622237b6b47b0aec765b5f0afc100</sys_id>
+        <sys_metadata>8ae4d32ddb0200101ed2c4ab0b961972</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
+        <sys_scope_delete display_value="">52302f37b32f42cc9fcf05efa4575319</sys_scope_delete>
+        <sys_update_name>sp_instance_8ae4d32ddb0200101ed2c4ab0b961972</sys_update_name>
+        <sys_update_version display_value="sp_instance_8ae4d32ddb0200101ed2c4ab0b961972">cae4d36ddb0200101ed2c4ab0b961995</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-31 04:26:47</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

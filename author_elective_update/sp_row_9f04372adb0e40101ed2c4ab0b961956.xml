@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row">
+    <sp_row action="DELETE">
+        <class_name/>
+        <order>1</order>
+        <sp_column/>
+        <sp_container display_value="HCM Appointment - Container 1">8e3b8e52dbc200101ed2c4ab0b9619ff</sp_container>
+        <sys_class_name>sp_row</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-03 09:15:08</sys_created_on>
+        <sys_id>9f04372adb0e40101ed2c4ab0b961956</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
+        <sys_update_name>sp_row_9f04372adb0e40101ed2c4ab0b961956</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-03 09:15:08</sys_updated_on>
+    </sp_row>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</application>
+        <file_path/>
+        <instance_id>0dfc6f02db7bbb008aea21c4059619eb</instance_id>
+        <instance_name>dev93413</instance_name>
+        <name>sp_row_9f04372adb0e40101ed2c4ab0b961956</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row"><sp_row action="INSERT_OR_UPDATE"><class_name/><order>1</order><sp_column/><sp_container display_value="HCM Appointment - Container 1">8e3b8e52dbc200101ed2c4ab0b9619ff</sp_container><sys_class_name>sp_row</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-01-03 09:15:08</sys_created_on><sys_id>9f04372adb0e40101ed2c4ab0b961956</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package><sys_policy/><sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope><sys_update_name>sp_row_9f04372adb0e40101ed2c4ab0b961956</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-01-03 09:15:08</sys_updated_on></sp_row></record_update>]]></payload>
+        <payload_hash>-716430</payload_hash>
+        <record_name>1</record_name>
+        <reverted_from/>
+        <source>f8758a42dbed40101ed2c4ab0b96190c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-03 09:15:08</sys_created_on>
+        <sys_id>5b04372adb0e40101ed2c4ab0b961958</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16f6aafdead0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-03 09:15:08</sys_updated_on>
+        <type>Row</type>
+        <update_guid>9304372ae00e4010e964be075c817258</update_guid>
+        <update_guid_history>9304372ae00e4010e964be075c817258:-716430</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="1">1f24bb2adb0e40101ed2c4ab0b9619e1</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-03 09:15:41</sys_created_on>
+        <sys_db_object display_value="" name="sp_row">sp_row</sys_db_object>
+        <sys_id>32d8248efca24661bcf9f5c9b2e40021</sys_id>
+        <sys_metadata>9f04372adb0e40101ed2c4ab0b961956</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
+        <sys_scope_delete display_value="">52302f37b32f42cc9fcf05efa4575319</sys_scope_delete>
+        <sys_update_name>sp_row_9f04372adb0e40101ed2c4ab0b961956</sys_update_name>
+        <sys_update_version display_value="sp_row_9f04372adb0e40101ed2c4ab0b961956">5b04372adb0e40101ed2c4ab0b961958</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-03 09:15:41</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -4,7 +4,10 @@
         <application display_value="Health Care">42460e82dbed40101ed2c4ab0b9619ef</application>
         <assessment/>
         <device_type/>
-        <filter/>
+        <filter table="x_423236_health_ca_appointment">u_dateONToday@javascript:gs.beginningOfToday()@javascript:gs.endOfToday()^task_for=javascript:getMyAssignments()^EQ<item endquery="false" field="u_date" goto="false" newquery="false" operator="ON" or="false" value="Today@javascript:gs.beginningOfToday()@javascript:gs.endOfToday()"/>
+            <item endquery="false" field="task_for" goto="false" newquery="false" operator="=" or="false" value="javascript:getMyAssignments()"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
         <hint>doctor appointment</hint>
         <homepage/>
         <image/>
@@ -15,7 +18,7 @@
         <name>x_423236_health_ca_appointment</name>
         <order>201</order>
         <override_menu_roles>false</override_menu_roles>
-        <query/>
+        <query>active=true^assigned_to=javascript:gs.user_id()</query>
         <report/>
         <roles>x_423236_health_ca.doctor</roles>
         <sys_class_name>sys_app_module</sys_class_name>
@@ -24,7 +27,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2641d602db2180101ed2c4ab0b961981</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Today's  Appointment </sys_name>
         <sys_overrides/>
         <sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package>
@@ -32,7 +35,7 @@
         <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
         <sys_update_name>sys_app_module_2641d602db2180101ed2c4ab0b961981</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-08 12:39:15</sys_updated_on>
+        <sys_updated_on>2019-12-31 06:48:53</sys_updated_on>
         <timeline_page/>
         <title>Today's  Appointment </title>
         <uncancelable>false</uncancelable>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">5cbcebe9db8200101ed2c4ab0b9619a9</sp_column>
+        <sp_widget display_value="Appointment Booking - Select ">23a3d287d7f23200811300285e61031e</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-31 06:09:17</sys_created_on>
+        <sys_id>c4cc6be9db8200101ed2c4ab0b9619c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
+        <sys_update_name>sp_instance_c4cc6be9db8200101ed2c4ab0b9619c7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-31 06:09:17</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters/>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=c4cc6be9db8200101ed2c4ab0b9619c7"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</application>
+        <file_path/>
+        <instance_id>0dfc6f02db7bbb008aea21c4059619eb</instance_id>
+        <instance_name>dev93413</instance_name>
+        <name>sp_instance_c4cc6be9db8200101ed2c4ab0b9619c7</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>1</order><roles/><short_description/><size>md</size><sp_column display_value="1">5cbcebe9db8200101ed2c4ab0b9619a9</sp_column><sp_widget display_value="Appointment Booking - Select ">23a3d287d7f23200811300285e61031e</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2019-12-31 06:09:17</sys_created_on><sys_id>c4cc6be9db8200101ed2c4ab0b9619c7</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package><sys_policy/><sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope><sys_update_name>sp_instance_c4cc6be9db8200101ed2c4ab0b9619c7</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-12-31 06:09:17</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=c4cc6be9db8200101ed2c4ab0b9619c7"/></record_update>]]></payload>
+        <payload_hash>-946241518</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>f8758a42dbed40101ed2c4ab0b96190c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-31 06:09:17</sys_created_on>
+        <sys_id>c4cc6be9db8200101ed2c4ab0b9619c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16f5a92a64a0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-31 06:09:17</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>00cc6be916820010d266912470975fc9</update_guid>
+        <update_guid_history>00cc6be916820010d266912470975fc9:-946241518</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">e3cc6fe9db8200101ed2c4ab0b9619fe</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-31 06:09:32</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>11194686b63c4dce9344d5b2f3d85304</sys_id>
+        <sys_metadata>c4cc6be9db8200101ed2c4ab0b9619c7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
+        <sys_scope_delete display_value="">52302f37b32f42cc9fcf05efa4575319</sys_scope_delete>
+        <sys_update_name>sp_instance_c4cc6be9db8200101ed2c4ab0b9619c7</sys_update_name>
+        <sys_update_version display_value="sp_instance_c4cc6be9db8200101ed2c4ab0b9619c7">c4cc6be9db8200101ed2c4ab0b9619c9</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-31 06:09:32</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

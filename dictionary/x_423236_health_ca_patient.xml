@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element extends="sys_user" label="Patient" max_length="40" name="x_423236_health_ca_patient" type="collection">
+        <element label="abc" max_length="40" name="abc" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Address" max_length="100" name="address" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Blood Group" max_length="40" name="blood_group" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Full Name" max_length="100" name="full_name" type="string"/>
+        <element label="Height" max_length="40" name="height" type="float"/>
+        <element label="Mobile no." max_length="40" name="mobile_no" type="phone_number_e164"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="MRN NO." max_length="40" name="number" read_only="true" type="string"/>
+        <element label="Pincode" max_length="40" name="pincode" type="longint"/>
+        <element attributes="edge_encryption_enabled=true" label="Relation" max_length="40" name="relation" type="string"/>
         <element label="Ambulance" max_length="40" name="u_boolean_1" type="boolean"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Blood Group" max_length="40" name="u_choice_6" type="string">
             <choice>
@@ -15,6 +23,7 @@
         <element attributes="edge_encryption_enabled=true" label="First Name" max_length="40" name="u_string_1" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Last Name" max_length="40" name="u_string_2" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Relation" max_length="40" name="u_string_3" type="string"/>
+        <element label="Weight" max_length="40" name="weight" type="float"/>
         <index name="index">
             <element name="u_reference_2"/>
         </index>

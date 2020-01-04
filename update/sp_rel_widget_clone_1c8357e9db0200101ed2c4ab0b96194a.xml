@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rel_widget_clone">
+    <sp_rel_widget_clone action="INSERT_OR_UPDATE">
+        <child display_value="Patient registration">108357e9db0200101ed2c4ab0b961947</child>
+        <cloned>2019-12-31 04:18:59</cloned>
+        <last_validated>2019-12-31 04:18:59</last_validated>
+        <parent display_value="Customer Registration">722069d4c3311200e94a9f2974d3ae04</parent>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;sp_widget&gt;&lt;category/&gt;&lt;client_script&gt;&lt;![CDATA[function ($scope, $rootScope, $timeout, spUtil, $location) {
+	var c = this;
+	if(c.data.is_logged_in)
+		$location.url($scope.portal.url_suffix);
+	c.captchaVerified = false;
+	c.policy = false;
+	CustomEvent.observe('sn_csm_captcha_verified', function(obj) {
+		c.captchaVerified = obj.captchaVerified;
+		c.grc = obj.grc;		
+		scope.$apply();	
+	});
+	c.showSubmit = function() {
+		if(c.data.enableCaptcha == 'false')
+			return !(c.first_name &amp;&amp; c.policy == true &amp;&amp; c.last_name &amp;&amp; c.email &amp;&amp; c.code);
+		else
+			return !(c.first_name &amp;&amp; c.policy == true &amp;&amp; c.captchaVerified == true &amp;&amp; c.last_name &amp;&amp; c.email &amp;&amp; c.code &amp;&amp; c.grc);
+	};
+	c.action = function() {
+		
+		c.data.action = 'register';
+		c.data.first_name = c.first_name;
+		c.data.last_name = c.last_name;
+		c.data.email = c.email;
+		c.data.code = c.code;
+		c.data.grc = c.grc;
+		c.server.update().then(function(response) {
+			var data = response["result"];
+			if (response.status == 'success') {
+				c.success = response["message"];
+			$timeout(function(){
+						$location.url('/'+$scope.portal.url_suffix);
+				},5000);
+			} else if (response.status == 'error') {
+				c.success = 'There was an error processing your request';
+			}
+		});
+	};
+	$scope.registrationInit = function(){};
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.form_link a {
+  text-decoration: underline;
+}
+
+input[type="checkbox"]:focus{
+  outline-width:3px;
+  outline-color:$input-border-focus;
+  outline-style:solid;
+}
+
+.form_link a:focus {
+  outline-width:3px;
+  outline-color:$input-border-focus;
+  outline-style:solid;
+  outline-offset:2px;
+}
+
+.adjust-label{
+  padding-top: 0px;
+  margin-bottom: 7px;
+}
+  input:focus{
+    outline-style:solid;
+    outline-width:1px;
+  }
+
+
+&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;customer-registration&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;Customer Registration&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;true&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function($sp, input, data, options) {
+	"use strict";
+	data.is_logged_in = gs.getSession().isLoggedIn();
+	data.sys_id = '-1';
+	data.captch_url= 'https://www.google.com/recaptcha/api.js?onload=onloadCallback&amp;render=explicit&amp;hl=' + gs.getSession().getLanguage();
+	data.enableCaptcha = gs.getProperty('sn_customerservice.captchaEnabled');
+	data.captchaSiteKey = gs.getProperty('google.captcha.site_key');
+	if (input &amp;&amp; input.action == 'register' &amp;&amp; input.first_name &amp;&amp; input.last_name &amp;&amp; input.email &amp;&amp; input.code) {
+		var trueCaptcha = new global.CSManagementUtils().verifyCaptcha(input.grc);
+		if(trueCaptcha) {
+			var result = {};
+			var gr = new GlideRecord('sn_customerservice_registration');
+			gr.initialize();
+			gr.setValue('first_name', input.first_name);
+			gr.setValue('last_name', input.last_name);
+			gr.setValue('email', input.email);
+			gr.setValue('registration_code', input.code);
+			var sys_id = gr.insert();
+			if(!gs.nil(sys_id)) {
+				data.sys_id = sys_id;
+				data.status = "success";
+				data.message = gs.getMessage("Your request has been submitted and is pending review. You will receive an email when your request is processed.");
+			} else {
+				data.status = "error";
+			}
+			data.result = result;
+			return data;
+		} else {
+			gs.addErrorMessage(gs.getMessage('Please verify the security code.'));
+			data.status = "error";
+			return data;
+		}	
+	}
+})($sp, input, data, options);]]&gt;&lt;/script&gt;&lt;servicenow&gt;true&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-02-21 15:08:55&lt;/sys_created_on&gt;&lt;sys_id&gt;722069d4c3311200e94a9f2974d3ae04&lt;/sys_id&gt;&lt;sys_mod_count&gt;197&lt;/sys_mod_count&gt;&lt;sys_name&gt;Customer Registration&lt;/sys_name&gt;&lt;sys_package display_value="Customer Service Portal" source="com.glide.service-portal.customer-portal"&gt;19ce83d0dbc640101ed2c4ab0b96194d&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_722069d4c3311200e94a9f2974d3ae04&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-04-01 16:25:51&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="panel b" ng-init="registrationInit()"&gt;
+   &lt;!-- header --&gt;
+   &lt;div class="panel-heading bg-primary"&gt;
+      &lt;h1 class="panel-title"&gt;${Customer Registration}&lt;/h1&gt;
+   &lt;/div&gt;
+   &lt;!-- body --&gt;
+   &lt;div class="panel-body" &gt;
+      &lt;form ng-submit="$event.preventDefault()" class="form-horizontal"&gt;
+         &lt;!-- First Name input--&gt;
+         &lt;div class="form-group"&gt;
+            &lt;label class="col-sm-3 control-label" for="first_name"&gt;${First Name}&lt;/label&gt;
+            &lt;div class="col-sm-6"&gt;
+               &lt;input ng-model="c.first_name" id="first_name" name="first_name" placeholder="${first name}" class="form-control"&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+         &lt;!-- Last Name input--&gt;
+         &lt;div class="form-group"&gt;
+            &lt;label class="col-sm-3 control-label" for="last_name"&gt;${Last Name}&lt;/label&gt;
+            &lt;div class="col-sm-6"&gt;
+               &lt;input ng-model="c.last_name" id="last_name" name="last_name" placeholder="${last name}" class="form-control"&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+         &lt;!-- Business Email input--&gt;
+         &lt;div class="form-group"&gt;
+            &lt;label class="col-sm-3 control-label" for="email"&gt;${Business Email}&lt;/label&gt;
+            &lt;div class="col-sm-6"&gt;
+               &lt;input ng-model="c.email" id="email" name="email" placeholder="${business email}" class="form-control"&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+         &lt;!-- Registration Code input--&gt;
+         &lt;div class="form-group"&gt;
+            &lt;label class="col-sm-3 control-label" for="code"&gt;${Registration Code}&lt;/label&gt;
+            &lt;div class="col-sm-6"&gt;
+               &lt;input ng-model="c.code" id="code" name="code" placeholder="${Your company registration code}" class="form-control"&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+         &lt;!-- Privacy Policy &amp; Terms conditions --&gt;
+         &lt;div class="form-group col-sm-12 input-group-checkbox"&gt;
+            &lt;div class="col-sm-6 form_link col-sm-offset-3" tabindex="0"&gt;
+               &lt;label class="control-label adjust-label" for="checkbox_agree"&gt;
+               &lt;input ng-model="c.policy" id="checkbox_agree" class="checkbox_agree" type="checkbox" name="policy"&gt;
+               I agree to the &lt;a href="/sn_customerservice_registration_privacy_policy_doc.do" target="_blank"&gt;Privacy Policy&lt;/a&gt;
+               and Community &lt;a href="/sn_customerservice_registration_terms_doc.do" target="_blank"&gt;Terms and Conditions&lt;/a&gt;
+               &lt;/label&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+         &lt;input id="sitekey" type="hidden" value={{c.data.captchaSiteKey}}&gt;
+         &lt;script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&amp;render=explicit" async defer&gt; &lt;/script&gt;
+         &lt;script&gt;
+            var onloadCallback = function() {
+                var siteKey = jQuery("#sitekey").val();
+                var captchaVerified;
+                var captchaWidget;
+                var verifyCallback = function(grc) {
+                    if ((grc == "") || (grc == undefined))
+                        captchaVerified = false;
+                    else 
+                        captchaVerified = true;
+                    jQuery("#captchaVerified").attr("value", captchaVerified);
+                    CustomEvent.fireAll('sn_csm_captcha_verified', {captchaVerified: captchaVerified, grc: grc});
+                };
+                captchaWidget = grecaptcha.render('html_element', {
+                    'sitekey': siteKey,
+                    'callback': verifyCallback,
+                    'theme': 'light',
+                    'expired-callback': captchaExpired
+                });
+            };
+            var captchaExpired = function() {
+                captchaVerified = false;
+                jQuery("#captchaVerified").attr("value", captchaVerified);
+                CustomEvent.fireAll('sn_csm_captcha_verified', {captchaVerified: captchaVerified, grc: null});
+            };
+         &lt;/script&gt;
+         &lt;!-- Google Recaptcha --&gt;
+         &lt;div ng-if="data.enableCaptcha == 'true'" id="captcha_form_group" class="form-group"&gt;
+            &lt;input ng-model="c.captchaVerified" type="checkbox" name="captchaVerified" id="captchaVerified" style="display:none;" class="form-control"&gt;
+            &lt;label class="col-sm-3 control-label"&gt;${Security Code}&lt;/label&gt;
+            &lt;span class="col-sm-9"&gt;
+      &lt;form action="?" method="POST"&gt;
+      &lt;div class="g-recaptcha" id="html_element"&gt;&lt;/div&gt;
+      &lt;span class="help-block" id="retype_captcha"&gt;&lt;/span&gt;
+      &lt;/form&gt;
+      &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+         &lt;button type="submit" ng-disabled="data.status == 'success' || c.showSubmit()" ng-click="c.action()" class="btn btn-primary"&gt;${Submit}&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;/form&gt;
+   &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;</payload>
+        <sys_class_name>sp_rel_widget_clone</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-31 04:18:59</sys_created_on>
+        <sys_id>1c8357e9db0200101ed2c4ab0b96194a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>108357e9db0200101ed2c4ab0b961947</sys_name>
+        <sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
+        <sys_update_name>sp_rel_widget_clone_1c8357e9db0200101ed2c4ab0b96194a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-31 04:18:59</sys_updated_on>
+    </sp_rel_widget_clone>
+</record_update>

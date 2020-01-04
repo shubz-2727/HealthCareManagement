@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="u_task_appointment" label="HCM appoitment" max_length="40" name="x_423236_health_ca_hcm_appoitment" type="collection"/>
+</database>

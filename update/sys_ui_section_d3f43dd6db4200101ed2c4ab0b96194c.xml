@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="d3f43dd6db4200101ed2c4ab0b96194c" sys_domain="global" table="x_423236_health_ca_patient" version="3" view="human_resource">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-02 05:21:30</sys_created_on>
+            <sys_id>93f43dd6db4200101ed2c4ab0b96194d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_423236_health_ca_patient" sys_domain="global" view="1054f51adb4200101ed2c4ab0b96197f">d3f43dd6db4200101ed2c4ab0b96194c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-02 05:21:30</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-02 05:21:30</sys_created_on>
+            <sys_id>1bf43dd6db4200101ed2c4ab0b96194d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_423236_health_ca_patient" sys_domain="global" view="1054f51adb4200101ed2c4ab0b96197f">d3f43dd6db4200101ed2c4ab0b96194c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-02 05:21:30</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_string_1</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-02 05:21:30</sys_created_on>
+            <sys_id>9ff43dd6db4200101ed2c4ab0b96194d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_423236_health_ca_patient" sys_domain="global" view="1054f51adb4200101ed2c4ab0b96197f">d3f43dd6db4200101ed2c4ab0b96194c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-02 05:21:30</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_string_2</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-02 05:21:30</sys_created_on>
+            <sys_id>17f43dd6db4200101ed2c4ab0b96194e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_423236_health_ca_patient" sys_domain="global" view="1054f51adb4200101ed2c4ab0b96197f">d3f43dd6db4200101ed2c4ab0b96194c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-02 05:21:30</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_float_5</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-02 05:21:30</sys_created_on>
+            <sys_id>9bf43dd6db4200101ed2c4ab0b96194e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_423236_health_ca_patient" sys_domain="global" view="1054f51adb4200101ed2c4ab0b96197f">d3f43dd6db4200101ed2c4ab0b96194c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-02 05:21:30</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_string_3</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-02 05:21:30</sys_created_on>
+            <sys_id>13f43dd6db4200101ed2c4ab0b96194f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_423236_health_ca_patient" sys_domain="global" view="1054f51adb4200101ed2c4ab0b96197f">d3f43dd6db4200101ed2c4ab0b96194c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-02 05:21:30</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-02 05:21:30</sys_created_on>
+            <sys_id>97f43dd6db4200101ed2c4ab0b96194f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_423236_health_ca_patient" sys_domain="global" view="1054f51adb4200101ed2c4ab0b96197f">d3f43dd6db4200101ed2c4ab0b96194c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-02 05:21:30</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_choice_6</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-02 05:21:30</sys_created_on>
+            <sys_id>1ff43dd6db4200101ed2c4ab0b96194f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_423236_health_ca_patient" sys_domain="global" view="1054f51adb4200101ed2c4ab0b96197f">d3f43dd6db4200101ed2c4ab0b96194c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-02 05:21:30</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_float_4</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-02 05:21:30</sys_created_on>
+            <sys_id>93f43dd6db4200101ed2c4ab0b961950</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_423236_health_ca_patient" sys_domain="global" view="1054f51adb4200101ed2c4ab0b96197f">d3f43dd6db4200101ed2c4ab0b96194c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-02 05:21:30</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_reference_2</element>
+            <position>9</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-02 05:21:30</sys_created_on>
+            <sys_id>1bf43dd6db4200101ed2c4ab0b961950</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_423236_health_ca_patient" sys_domain="global" view="1054f51adb4200101ed2c4ab0b96197f">d3f43dd6db4200101ed2c4ab0b96194c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-02 05:21:30</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_boolean_1</element>
+            <position>10</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-02 05:21:30</sys_created_on>
+            <sys_id>17f4355adb4200101ed2c4ab0b96191f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_423236_health_ca_patient" sys_domain="global" view="1054f51adb4200101ed2c4ab0b96197f">d3f43dd6db4200101ed2c4ab0b96194c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-02 05:21:30</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>abc</element>
+            <position>11</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-02 05:21:30</sys_created_on>
+            <sys_id>9bf4355adb4200101ed2c4ab0b96191f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_423236_health_ca_patient" sys_domain="global" view="1054f51adb4200101ed2c4ab0b96197f">d3f43dd6db4200101ed2c4ab0b96194c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-02 05:21:30</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>12</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-02 05:21:30</sys_created_on>
+            <sys_id>13f4355adb4200101ed2c4ab0b961920</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_423236_health_ca_patient" sys_domain="global" view="1054f51adb4200101ed2c4ab0b96197f">d3f43dd6db4200101ed2c4ab0b96194c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-02 05:21:30</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_423236_health_ca_patient</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-02 05:21:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d3f43dd6db4200101ed2c4ab0b96194c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_423236_health_ca_patient</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
+            <sys_update_name>sys_ui_section_d3f43dd6db4200101ed2c4ab0b96194c</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-02 05:21:30</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Human_resource" name="human_resource">1054f51adb4200101ed2c4ab0b96197f</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

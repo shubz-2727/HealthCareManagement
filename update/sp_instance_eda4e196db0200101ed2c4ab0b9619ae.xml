@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>0</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="2">a1a4e196db0200101ed2c4ab0b9619ad</sp_column>
+        <sp_widget display_value="SC Category Page">f2ff0622d7000200a9ad1e173e24d4f3</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-02 04:10:06</sys_created_on>
+        <sys_id>eda4e196db0200101ed2c4ab0b9619ae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Catalog Category</sys_name>
+        <sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
+        <sys_update_name>sp_instance_eda4e196db0200101ed2c4ab0b9619ae</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-02 04:10:06</sys_updated_on>
+        <title>Catalog Category</title>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"click_event_name": {
+		"value": "",
+		"displayValue": ""
+	},
+	"limit_item": {
+		"value": 9,
+		"displayValue": "9"
+	},
+	"show_items_from_child": {
+		"value": "true",
+		"displayValue": "true"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=eda4e196db0200101ed2c4ab0b9619ae"/>
+</record_update>

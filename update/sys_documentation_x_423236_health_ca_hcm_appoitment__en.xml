@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="" label="HCM appoitment" language="en" table="x_423236_health_ca_hcm_appoitment">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element/>
+            <help/>
+            <hint/>
+            <label>HCM appoitment</label>
+            <language>en</language>
+            <name>x_423236_health_ca_hcm_appoitment</name>
+            <plural>HCM appoitments</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-03 09:21:51</sys_created_on>
+            <sys_id>719577aadb0e40101ed2c4ab0b9619be</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>HCM appoitment</sys_name>
+            <sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
+            <sys_update_name>sys_documentation_x_423236_health_ca_hcm_appoitment__en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-03 09:21:51</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

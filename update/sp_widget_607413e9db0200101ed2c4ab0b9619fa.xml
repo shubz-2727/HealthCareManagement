@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function hriMyTasksController($scope) {
+
+	"use strict";
+
+	$scope.init = function(user_id) {
+		$scope.getTasks(user_id);
+	};
+
+	$scope.getTasks = function(user_id) {
+		$scope.data.action = "getTasks";
+		$scope.data.user_id = user_id;
+		$scope.server.update();
+	};
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.media-left i {&#13;
+	font-size: 18px;&#13;
+	margin-top: 3px;&#13;
+}&#13;
+&#13;
+.media-note {&#13;
+	font-size: 90%;&#13;
+	color: #b1b1b1;&#13;
+	font-weight: 200;&#13;
+}</css>
+        <data_table>sp_instance_menu</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list>title</field_list>
+        <has_preview>false</has_preview>
+        <id>hr_task</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>HR task</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	data.user_id = gs.getUserID();
+	data.user_name = gs.getUserName();
+	data.title = $sp.getValue("title");
+	data.short_description = $sp.getValue("short_description");
+
+	if (input && input.action === 'getTasks')
+		getTasks(data.user_id);
+
+	function getTasks(userId) {
+		data.tasks = new sn_hr_core.hr_Task().getMyTasks(userId);
+	}
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-31 04:23:06</sys_created_on>
+        <sys_id>607413e9db0200101ed2c4ab0b9619fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>HR task</sys_name>
+        <sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
+        <sys_update_name>sp_widget_607413e9db0200101ed2c4ab0b9619fa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-31 04:23:06</sys_updated_on>
+        <template><![CDATA[<div ng-class="::{'hidden-xs' : options.hide_xs}" class="panel panel-{{::options.color}} b" ng-init="init(user.sys_id)" ng-show="data.tasks.length > 0">
+	<div class="panel-heading">
+		<h4 class="panel-title">
+			<span ng-if="::options.glyph" class="m-r-sm">
+				<fa name="{{::options.glyph}}" />
+			</span>
+          	{{::options.title}}
+		</h4>
+	</div>
+
+	<div class="list-group">
+		<span class="list-group-item" ng-repeat="task in data.tasks | orderBy: ['order']">
+			<div class="media text-primary">
+				<div class="media-left">
+					<i alt="${Open}" ng-if="!task.finished" class="fa fa-square-o"></i>
+          <i alt="${Completed}" ng-if="task.finished" class="fa fa-check-square-o"></i>
+				</div>
+				<div class="media-body">
+					<a href="?id=hri_task_details&table=sn_hr_core_task&sys_id={{task.sys_id}}" id="task_{{$index}}">{{::task.short_description}}</a>
+					<br />	
+          <span ng-if="!task.finished">
+					<span class="text-normal media-note" ng-if="task.due_date">${Due by} {{::task.due_date | date: 'mediumDate' }}<span class="text-warning" ng-if="task.isOverDue"> (${Overdue})</span></span>
+          </span>
+          <span ng-if="task.finished" class="text-muted media-note">${Completed at} {{::task.closed_at | date: 'mediumDate'}}</span>
+        </div>
+			</div>
+		</span>
+	</div>
+</div>
+]]></template>
+    </sp_widget>
+</record_update>

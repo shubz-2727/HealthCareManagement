@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function scheduleAppointment($rootScope, $timeout, $http, $scope) {
+    var c = this;
+    c.$onInit = function() {
+        c.selectedSlot = "";
+        c.timeSlotReturn = "";
+        c.alertSuccess = false;
+        c.setReminder = false;
+        c.appntUser = c.data.userName;
+        c.appntUserSysid = c.data.userID;
+        c.appntShortDescription = "";
+        c.appntDescription = "";
+        c.appntLocationSysid = "";
+        c.selectedReminderTime = c.data.reminderTimes[0];
+    };
+
+    c.getTimeSlots = function(date) {
+        c.dateFormatted = moment(date).format(c.data.dateFormat);
+        c.server.get({
+            action: 'getTimeSlots',
+            selectedDate: moment(date).format("YYYY-MM-DD")
+        }).then(function(response) {
+            if (response.data.timeSlots && response.data.timeSlots.length > 0) {
+                c.timeSLots = JSON.parse(response.data.timeSlots);
+                if (c.options.layout == 'Dropdown') {
+                    c.selectedSlot = c.timeSLots[0];
+                }
+            }
+
+        });
+    };
+
+    c.userChosen = function(user) {
+        c.appntUser = user;
+        c.appntUserSysid = user.sys_id;
+    };
+
+    c.getUsers = function(val) {
+        return $http.get('/api/now/table/sys_user?sysparm_query=nameLIKE' + val + '^ORfirst_nameLIKE' + val + '^ORlast_nameLIKE' + val + '&sysparm_limit=5', {
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+                'X-UserToken': window.g_ck
+            }
+        }).then(function(response) {
+
+            return response.data.result;
+        });
+    };
+
+    c.locationChosen = function(location) {
+        c.appntLocation = location;
+        c.appntLocationSysid = location.sys_id;
+    };
+
+    c.getLocations = function(val) {
+        return $http.get('/api/now/table/cmn_location?sysparm_query=nameLIKE' + val + '^ORstreetLIKE' + val + '^ORcityLIKE' + val + '^ORstateLIKE' + val + '&sysparm_limit=5', {
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+                'X-UserToken': window.g_ck
+            }
+        }).then(function(response) {
+            return response.data.result;
+        });
+    };
+
+    c.setupReminder = function(reminderTime) {
+        c.server.get({
+            action: 'setupReminder',
+            selectedTime: reminderTime,
+            taskSysid: c.timeSlotReturn.sys_id,
+            taskUserid: c.appntUserSysid
+        }).then(function(response) {
+            c.reminderSetup = response.data.reminderReturn;
+            $timeout(function() {
+                c.alertSuccess = false;
+                c.setReminder = false;
+            }, 5000);
+        });
+    };
+
+
+    function processTheTimes(appointments) {
+        for (var i = 0; i < appointments.length; i++) {
+            appointments[i].work_start = moment(appointments[i].work_start).fromNow();
+            if (appointments[i].duration > 0) {
+                appointments[i].duration = Math.floor(appointments[i].duration / 60);
+            }
+        }
+        return appointments;
+    }
+    c.datePickerPopup = {
+        opened: false
+    };
+    var today = new Date();
+
+    if (!c.options.max_date) {
+        c.options.max_date = 30;
+    }
+
+    c.dateOptions = {
+        showWeeks: false,
+        formatYear: 'yyyy',
+        maxDate: today.setDate(today.getDate() + parseInt(c.options.max_date)),
+        minDate: populateDate(),
+        startingDay: 1
+    };
+
+
+    // Disable weekend selection
+    c.disabled = function(date, mode) {
+        return (mode === 'day' && (date.getDay() === 0 || date.getDay() === 6));
+    };
+
+    c.openDatePickerPopup = function() {
+        c.datePickerPopup.opened = true;
+    };
+
+    c.submitTimeSlot = function(selectedDate, selectedSlot) {
+        var obj = {
+            'action': 'setTimeSlots',
+            'meetingDate': selectedDate,
+            'meetingTime': selectedSlot
+        };
+        if (c.appntLocation || c.appntDescription || c.appntShortDescription) {
+            obj.additionalFields = {
+                'short_description': c.appntShortDescription,
+                'description': c.appntDescription,
+                'location': c.appntLocationSysid
+            };
+        }
+        if (c.options.show_appointment_for == 'true' && c.appntUser) {
+            obj.additionalFields.appointment_for = c.appntUserSysid;
+        }
+
+        c.server.get(obj).then(function(response) {
+            if (response.data.timeSlotReturn) {
+                c.timeSlotReturn = JSON.parse(response.data.timeSlotReturn);
+                if (c.timeSlotReturn.sys_id) {
+                    c.alertSuccess = true;
+                    c.timeFormatted = c.timeSlotReturn.time_slot;
+                    if (c.setReminder) {
+                        c.setupReminder(c.selectedReminderTime.value.display_value);
+                    }
+                    c.getTimeSlots(selectedDate);
+                    c.appntUserSysid = c.data.userID;
+                    c.appntUser = c.data.userName;
+                    c.appntShortDescription = "";
+                    c.appntDescription = "";
+                    c.appntLocationSysid = "";
+                    c.appntLocation = "";
+                    $rootScope.$broadcast('appointmentCreated', '');
+                }
+            }
+        });
+    };
+
+
+    function populateDate() {
+        c.minDate = new Date();
+        c.getTimeSlots(c.minDate);
+        c.selectedDate = c.minDate;
+        c.dateFormatted = moment(c.selectedDate).format(c.data.dateFormat);
+        return c.minDate;
+    }
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>$time-slot-bg:#e4edf9;&#13;
+$time-slot-text:#607795;&#13;
+$brand-primary:#4b8cfb !default;&#13;
+.btn-submit {&#13;
+    width: 10%;&#13;
+    min-width: 80px;&#13;
+    @media screen and (max-width: 769px) {&#13;
+        width: 100%;&#13;
+    }&#13;
+}&#13;
+&#13;
+.switch-part {&#13;
+    width: 25%;&#13;
+    float: left;&#13;
+    min-width: 160px;&#13;
+    @media screen and (max-width: 769px) {&#13;
+        width: 50%;&#13;
+    }&#13;
+}&#13;
+&#13;
+.time-selector {&#13;
+    width: 30%;&#13;
+    min-width: 150px;&#13;
+    float: left;&#13;
+    @media screen and (max-width: 769px) {&#13;
+        width: 50%;&#13;
+    }&#13;
+}&#13;
+&#13;
+.time-card-container {&#13;
+    clear: both;&#13;
+    overflow: hidden;&#13;
+}&#13;
+&#13;
+.time-cards {&#13;
+    width: 47%;&#13;
+    height: 60px;&#13;
+    float: left;&#13;
+    padding: 10px;&#13;
+    color: $time-slot-text;&#13;
+    margin: 5px;&#13;
+    font-size: 18px;&#13;
+    background: $time-slot-bg;&#13;
+    display: flex;&#13;
+    justify-content: space-between;&#13;
+    align-items: center;&#13;
+    @media screen and (max-width: 414px) {&#13;
+        width: 100%;&#13;
+    }&#13;
+    &amp;.btn-selected {&#13;
+        background: $brand-primary;&#13;
+        color: #fff;&#13;
+        .fa {&#13;
+            color: #fff;&#13;
+        }&#13;
+    }&#13;
+    p {&#13;
+        margin: 0px;&#13;
+    }&#13;
+}&#13;
+&#13;
+.appointment-scheduler {&#13;
+    min-width: 320px;&#13;
+    background: #fff;&#13;
+    margin: 5px;&#13;
+    padding: 15px;&#13;
+    border-radius: 6px;&#13;
+    margin-top: 15px;&#13;
+    margin-bottom: 15px;&#13;
+    .btn.disabled {&#13;
+        opacity: .35;&#13;
+    }&#13;
+    .reminder-setup {&#13;
+        padding: 10px;&#13;
+        span {&#13;
+            font-size: 16px;&#13;
+        }&#13;
+        .reminder-select {&#13;
+            display: inline-block;&#13;
+            width: 100px;&#13;
+            margin-left: 5px;&#13;
+            margin-right: 5px;&#13;
+            height: 30px;&#13;
+        }&#13;
+    }&#13;
+    h3 {&#13;
+        margin-top: 10px;&#13;
+        font-weight: 300;&#13;
+    }&#13;
+    .uib-datepicker .btn-default {&#13;
+        border: 1px solid #fff;&#13;
+    }&#13;
+    table.uib-daypicker thead tr:nth-child(2) {&#13;
+        background-color: aliceblue;&#13;
+    }&#13;
+    .btn-info.active {&#13;
+        border-radius: 50%;&#13;
+        color: #fff;&#13;
+        .text-info {&#13;
+            color: #fff;&#13;
+        }&#13;
+    }&#13;
+    .btn[disabled] {&#13;
+        opacity: 0.35;&#13;
+    }&#13;
+    .uib-button-bar {&#13;
+        .uib-datepicker-current {&#13;
+            background: inherit;&#13;
+            color: $brand-info;&#13;
+            border: 0px;&#13;
+        }&#13;
+        .uib-clear {&#13;
+            background: inherit;&#13;
+            color: $brand-danger;&#13;
+            border: 0px;&#13;
+        }&#13;
+        .uib-close {&#13;
+            background: inherit;&#13;
+            color: $brand-success;&#13;
+            border: 0px;&#13;
+        }&#13;
+    }&#13;
+    .remove-padding-left {&#13;
+        padding-left: 0px;&#13;
+    }&#13;
+    .flex-it {&#13;
+        display: flex;&#13;
+        align-items: center;&#13;
+        justify-content: center;&#13;
+    }&#13;
+    .button-div {&#13;
+        display: inline-block;&#13;
+    }&#13;
+    .alert-div {&#13;
+        margin-top: 30px;&#13;
+        position: relative;&#13;
+        clear: both;&#13;
+        .close {&#13;
+            position: absolute;&#13;
+            right: 6px;&#13;
+            top: 3px;&#13;
+        }&#13;
+    }&#13;
+    .slot-selector {&#13;
+        margin-top: 20px;&#13;
+        .appt-dateformatted {&#13;
+            float: left;&#13;
+            margin: 0;&#13;
+            margin-left: 57px;&#13;
+            margin-top: -38px;&#13;
+            margin-right: 15px;&#13;
+            height: 18px;&#13;
+            font-size: 17px;&#13;
+            font-weight: 400;&#13;
+            line-height: 1;&#13;
+            z-index: 400;&#13;
+            color: #aaaaaa;&#13;
+            background-color: #ffffff;&#13;
+            position: relative;&#13;
+        }&#13;
+        .appt-change {&#13;
+            float: right;&#13;
+            margin-top: -38px;&#13;
+            margin-right: 15px;&#13;
+            letter-spacing: 1.1px;&#13;
+            font-size: 12px;&#13;
+            font-weight: 600;&#13;
+            line-height: 1.5;&#13;
+            color: $brand-primary;&#13;
+            z-index: 400;&#13;
+            position: relative;&#13;
+            @media screen and (max-width: 300px) {&#13;
+                display: none;&#13;
+            }&#13;
+        }&#13;
+        .appt-datepicker {&#13;
+            margin: 0 auto;&#13;
+            margin-bottom: 30px;&#13;
+        }&#13;
+        .input-group,&#13;
+        .form-group {&#13;
+            margin: 0 auto;&#13;
+            width: 100%;&#13;
+        }&#13;
+        .uidatepicker {&#13;
+            border-radius: 0px;&#13;
+            height: 60px;&#13;
+            background: no-repeat scroll 20px 15px;&#13;
+            background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMyIgaGVpZ2h0PSIyNiIgdmlld0JveD0iMCAwIDIzIDI2Ij4gICAgPGcgZmlsbD0iI0RERCIgZmlsbC1ydWxlPSJub256ZXJvIj4gICAgICAgIDxwYXRoIGQ9Ik0yMC45MjcgMjZIMS45MDJBMS44NjggMS44NjggMCAwIDEgMCAyNC4wOThWNS4wNzNjMC0xLjA3OC44MjQtMS45MDIgMS45MDItMS45MDJoMTkuMDI1YzEuMDc4IDAgMS45MDIuODI0IDEuOTAyIDEuOTAydjE5LjAyNUExLjg2OCAxLjg2OCAwIDAgMSAyMC45MjcgMjZ6TTEuOTAyIDQuNDM5Yy0uMzggMC0uNjM0LjI1NC0uNjM0LjYzNHYxOS4wMjVjMCAuMzguMjU0LjYzNC42MzQuNjM0aDE5LjAyNWMuMzggMCAuNjM0LS4yNTQuNjM0LS42MzRWNS4wNzNjMC0uMzgtLjI1NC0uNjM0LS42MzQtLjYzNEgxLjkwMnpNNS4wNzMgMGgxLjI2OHYzLjE3MUg1LjA3M3pNMTYuNDg4IDBoMS4yNjh2My4xNzFoLTEuMjY4eiIvPiAgICAgICAgPHBhdGggZD0iTTExLjQxNSAxMC4xNDZBMi41NDQgMi41NDQgMCAwIDEgOC44NzggNy42MWEyLjU0NCAyLjU0NCAwIDAgMSAyLjUzNy0yLjUzN0EyLjU0NCAyLjU0NCAwIDAgMSAxMy45NSA3LjYxYTIuNTQ0IDIuNTQ0IDAgMCAxLTIuNTM2IDIuNTM2em0wLTMuODA1Yy0uNjk4IDAtMS4yNjkuNTcxLTEuMjY5IDEuMjY5IDAgLjY5Ny41NzEgMS4yNjggMS4yNjkgMS4yNjguNjk3IDAgMS4yNjgtLjU3IDEuMjY4LTEuMjY4IDAtLjY5OC0uNTctMS4yNjktMS4yNjgtMS4yNjl6TTE3Ljc1NiAxMC4xNDZBMi41NDQgMi41NDQgMCAwIDEgMTUuMjIgNy42MWEyLjU0NCAyLjU0NCAwIDAgMSAyLjUzNi0yLjUzNyAyLjU0NCAyLjU0NCAwIDAgMSAyLjUzNyAyLjUzNyAyLjU0NCAyLjU0NCAwIDAgMS0yLjUzNyAyLjUzNnptMC0zLjgwNWMtLjY5NyAwLTEuMjY4LjU3MS0xLjI2OCAxLjI2OSAwIC42OTcuNTcgMS4yNjggMS4yNjggMS4yNjguNjk4IDAgMS4yNjgtLjU3IDEuMjY4LTEuMjY4IDAtLjY5OC0uNTctMS4yNjktMS4yNjgtMS4yNjl6TTUuMDczIDE2LjQ4OGEyLjU0NCAyLjU0NCAwIDAgMS0yLjUzNi0yLjUzNyAyLjU0NCAyLjU0NCAwIDAgMSAyLjUzNi0yLjUzNkEyLjU0NCAyLjU0NCAwIDAgMSA3LjYxIDEzLjk1YTIuNTQ0IDIuNTQ0IDAgMCAxLTIuNTM3IDIuNTM3em0wLTMuODA1Yy0uNjk3IDAtMS4yNjguNTctMS4yNjggMS4yNjggMCAuNjk4LjU3IDEuMjY5IDEuMjY4IDEuMjY5LjY5OCAwIDEuMjY4LS41NzEgMS4yNjgtMS4yNjkgMC0uNjk3LS41Ny0xLjI2OC0xLjI2OC0xLjI2OHpNMTEuNDE1IDE2LjQ4OGEyLjU0NCAyLjU0NCAwIDAgMS0yLjUzNy0yLjUzNyAyLjU0NCAyLjU0NCAwIDAgMSAyLjUzNy0yLjUzNiAyLjU0NCAyLjU0NCAwIDAgMSAyLjUzNiAyLjUzNiAyLjU0NCAyLjU0NCAwIDAgMS0yLjUzNiAyLjUzN3ptMC0zLjgwNWMtLjY5OCAwLTEuMjY5LjU3LTEuMjY5IDEuMjY4IDAgLjY5OC41NzEgMS4yNjkgMS4yNjkgMS4yNjkuNjk3IDAgMS4yNjgtLjU3MSAxLjI2OC0xLjI2OSAwLS42OTctLjU3LTEuMjY4LTEuMjY4LTEuMjY4ek0xNy43NTYgMTYuNDg4YTIuNTQ0IDIuNTQ0IDAgMCAxLTIuNTM2LTIuNTM3IDIuNTQ0IDIuNTQ0IDAgMCAxIDIuNTM2LTIuNTM2IDIuNTQ0IDIuNTQ0IDAgMCAxIDIuNTM3IDIuNTM2IDIuNTQ0IDIuNTQ0IDAgMCAxLTIuNTM3IDIuNTM3em0wLTMuODA1Yy0uNjk3IDAtMS4yNjguNTctMS4yNjggMS4yNjggMCAuNjk4LjU3IDEuMjY5IDEuMjY4IDEuMjY5LjY5OCAwIDEuMjY4LS41NzEgMS4yNjgtMS4yNjkgMC0uNjk3LS41Ny0xLjI2OC0xLjI2OC0xLjI2OHpNNS4wNzMgMjIuODNhMi41NDQgMi41NDQgMCAwIDEtMi41MzYtMi41MzcgMi41NDQgMi41NDQgMCAwIDEgMi41MzYtMi41MzcgMi41NDQgMi41NDQgMCAwIDEgMi41MzcgMi41MzcgMi41NDQgMi41NDQgMCAwIDEtMi41MzcgMi41MzZ6bTAtMy44MDZjLS42OTcgMC0xLjI2OC41NzEtMS4yNjggMS4yNjkgMCAuNjk3LjU3IDEuMjY4IDEuMjY4IDEuMjY4LjY5OCAwIDEuMjY4LS41NyAxLjI2OC0xLjI2OCAwLS42OTgtLjU3LTEuMjY5LTEuMjY4LTEuMjY5eiIvPiAgICA8L2c+PC9zdmc+);&#13;
+            background-color: #fff;&#13;
+            padding-left: 60px;&#13;
+            @media (max-width: 320px) {&#13;
+                max-width: 290px;&#13;
+                background: no-repeat scroll 10px 15px;&#13;
+                background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMyIgaGVpZ2h0PSIyNiIgdmlld0JveD0iMCAwIDIzIDI2Ij4gICAgPGcgZmlsbD0iI0RERCIgZmlsbC1ydWxlPSJub256ZXJvIj4gICAgICAgIDxwYXRoIGQ9Ik0yMC45MjcgMjZIMS45MDJBMS44NjggMS44NjggMCAwIDEgMCAyNC4wOThWNS4wNzNjMC0xLjA3OC44MjQtMS45MDIgMS45MDItMS45MDJoMTkuMDI1YzEuMDc4IDAgMS45MDIuODI0IDEuOTAyIDEuOTAydjE5LjAyNUExLjg2OCAxLjg2OCAwIDAgMSAyMC45MjcgMjZ6TTEuOTAyIDQuNDM5Yy0uMzggMC0uNjM0LjI1NC0uNjM0LjYzNHYxOS4wMjVjMCAuMzguMjU0LjYzNC42MzQuNjM0aDE5LjAyNWMuMzggMCAuNjM0LS4yNTQuNjM0LS42MzRWNS4wNzNjMC0uMzgtLjI1NC0uNjM0LS42MzQtLjYzNEgxLjkwMnpNNS4wNzMgMGgxLjI2OHYzLjE3MUg1LjA3M3pNMTYuNDg4IDBoMS4yNjh2My4xNzFoLTEuMjY4eiIvPiAgICAgICAgPHBhdGggZD0iTTExLjQxNSAxMC4xNDZBMi41NDQgMi41NDQgMCAwIDEgOC44NzggNy42MWEyLjU0NCAyLjU0NCAwIDAgMSAyLjUzNy0yLjUzN0EyLjU0NCAyLjU0NCAwIDAgMSAxMy45NSA3LjYxYTIuNTQ0IDIuNTQ0IDAgMCAxLTIuNTM2IDIuNTM2em0wLTMuODA1Yy0uNjk4IDAtMS4yNjkuNTcxLTEuMjY5IDEuMjY5IDAgLjY5Ny41NzEgMS4yNjggMS4yNjkgMS4yNjguNjk3IDAgMS4yNjgtLjU3IDEuMjY4LTEuMjY4IDAtLjY5OC0uNTctMS4yNjktMS4yNjgtMS4yNjl6TTE3Ljc1NiAxMC4xNDZBMi41NDQgMi41NDQgMCAwIDEgMTUuMjIgNy42MWEyLjU0NCAyLjU0NCAwIDAgMSAyLjUzNi0yLjUzNyAyLjU0NCAyLjU0NCAwIDAgMSAyLjUzNyAyLjUzNyAyLjU0NCAyLjU0NCAwIDAgMS0yLjUzNyAyLjUzNnptMC0zLjgwNWMtLjY5NyAwLTEuMjY4LjU3MS0xLjI2OCAxLjI2OSAwIC42OTcuNTcgMS4yNjggMS4yNjggMS4yNjguNjk4IDAgMS4yNjgtLjU3IDEuMjY4LTEuMjY4IDAtLjY5OC0uNTctMS4yNjktMS4yNjgtMS4yNjl6TTUuMDczIDE2LjQ4OGEyLjU0NCAyLjU0NCAwIDAgMS0yLjUzNi0yLjUzNyAyLjU0NCAyLjU0NCAwIDAgMSAyLjUzNi0yLjUzNkEyLjU0NCAyLjU0NCAwIDAgMSA3LjYxIDEzLjk1YTIuNTQ0IDIuNTQ0IDAgMCAxLTIuNTM3IDIuNTM3em0wLTMuODA1Yy0uNjk3IDAtMS4yNjguNTctMS4yNjggMS4yNjggMCAuNjk4LjU3IDEuMjY5IDEuMjY4IDEuMjY5LjY5OCAwIDEuMjY4LS41NzEgMS4yNjgtMS4yNjkgMC0uNjk3LS41Ny0xLjI2OC0xLjI2OC0xLjI2OHpNMTEuNDE1IDE2LjQ4OGEyLjU0NCAyLjU0NCAwIDAgMS0yLjUzNy0yLjUzNyAyLjU0NCAyLjU0NCAwIDAgMSAyLjUzNy0yLjUzNiAyLjU0NCAyLjU0NCAwIDAgMSAyLjUzNiAyLjUzNiAyLjU0NCAyLjU0NCAwIDAgMS0yLjUzNiAyLjUzN3ptMC0zLjgwNWMtLjY5OCAwLTEuMjY5LjU3LTEuMjY5IDEuMjY4IDAgLjY5OC41NzEgMS4yNjkgMS4yNjkgMS4yNjkuNjk3IDAgMS4yNjgtLjU3MSAxLjI2OC0xLjI2OSAwLS42OTctLjU3LTEuMjY4LTEuMjY4LTEuMjY4ek0xNy43NTYgMTYuNDg4YTIuNTQ0IDIuNTQ0IDAgMCAxLTIuNTM2LTIuNTM3IDIuNTQ0IDIuNTQ0IDAgMCAxIDIuNTM2LTIuNTM2IDIuNTQ0IDIuNTQ0IDAgMCAxIDIuNTM3IDIuNTM2IDIuNTQ0IDIuNTQ0IDAgMCAxLTIuNTM3IDIuNTM3em0wLTMuODA1Yy0uNjk3IDAtMS4yNjguNTctMS4yNjggMS4yNjggMCAuNjk4LjU3IDEuMjY5IDEuMjY4IDEuMjY5LjY5OCAwIDEuMjY4LS41NzEgMS4yNjgtMS4yNjkgMC0uNjk3LS41Ny0xLjI2OC0xLjI2OC0xLjI2OHpNNS4wNzMgMjIuODNhMi41NDQgMi41NDQgMCAwIDEtMi41MzYtMi41MzcgMi41NDQgMi41NDQgMCAwIDEgMi41MzYtMi41MzcgMi41NDQgMi41NDQgMCAwIDEgMi41MzcgMi41MzcgMi41NDQgMi41NDQgMCAwIDEtMi41MzcgMi41MzZ6bTAtMy44MDZjLS42OTcgMC0xLjI2OC41NzEtMS4yNjggMS4yNjkgMCAuNjk3LjU3IDEuMjY4IDEuMjY4IDEuMjY4LjY5OCAwIDEuMjY4LS41NyAxLjI2OC0xLjI2OCAwLS42OTgtLjU3LTEuMjY5LTEuMjY4LTEuMjY5eiIvPiAgICA8L2c+PC9zdmc+);&#13;
+                padding-left: 40px;&#13;
+            }&#13;
+        }&#13;
+    }&#13;
+    .reminder-select {&#13;
+        width: 100px;&#13;
+        height: 28px;&#13;
+        margin-top: 10px;&#13;
+        padding: 0px;&#13;
+        padding-left: 3px;&#13;
+        display: inline-flex;&#13;
+        @media (max-width: 320px) {&#13;
+            margin-left: -25px;&#13;
+        }&#13;
+    }&#13;
+    .reminder-select-label {&#13;
+        position: absolute;&#13;
+        margin-left: 8px;&#13;
+        margin-top: 14px;&#13;
+        font-size: 16px;&#13;
+        color: $brand-primary;&#13;
+    }&#13;
+    /* line 1, sass/custom/_switches.scss */&#13;
+    input[type=checkbox] {&#13;
+        visibility: hidden;&#13;
+    }&#13;
+    .switch-label {&#13;
+        position: absolute;&#13;
+        margin-left: 8px;&#13;
+        margin-top: 4px;&#13;
+        font-size: 16px;&#13;
+        color: $brand-primary;&#13;
+    }&#13;
+    .input-switch {&#13;
+        height: 28px;&#13;
+        margin-top: 10px;&#13;
+        margin-bottom: 20px;&#13;
+        margin-left: -10px;&#13;
+        @media (max-width: 320px) {&#13;
+            margin-left: -15px;&#13;
+        }&#13;
+    }&#13;
+    /* line 21, sass/custom/_switches.scss */&#13;
+    .input-switch input[type=checkbox]~.switch {&#13;
+        background-color: #aaaaaa;&#13;
+        width: 50px;&#13;
+        height: 27px;&#13;
+        border-radius: 12.5px;&#13;
+        position: relative;&#13;
+        display: inline-block;&#13;
+        transition: all 0.4s;&#13;
+        /*box-shadow: inset 0px 0px 3px 0px #777;*/&#13;
+    }&#13;
+    /* line 31, sass/custom/_switches.scss */&#13;
+    .input-switch input[type=checkbox]~.switch:before {&#13;
+        content: '';&#13;
+        color: transparent;&#13;
+        background-color: #fff;&#13;
+        border-radius: 50%;&#13;
+        width: 45%;&#13;
+        position: absolute;&#13;
+        left: 0;&#13;
+        top: 0;&#13;
+        bottom: 0;&#13;
+        margin: 2px;&#13;
+        transition: all 0.4s;&#13;
+        /*box-shadow: 0 6px 18px -9px #000000;*/&#13;
+    }&#13;
+    /* line 51, sass/custom/_switches.scss */&#13;
+    .input-switch input[type=checkbox]:checked~.switch {&#13;
+        background-color: $brand-primary;&#13;
+    }&#13;
+    /* line 54, sass/custom/_switches.scss */&#13;
+    .input-switch input[type=checkbox]:checked~.switch:before {&#13;
+        left: 23.5px;&#13;
+    }&#13;
+    /* line 61, sass/custom/_switches.scss */&#13;
+    .input-switch input[type=checkbox]:disabled~.switch {&#13;
+        opacity: 0.5;&#13;
+    }&#13;
+    /* line 69, sass/custom/_switches.scss */&#13;
+    .input-switch input[type=checkbox]:hover~.switch:before {&#13;
+        box-shadow: 0px;&#13;
+        /*box-shadow: 0 6px 18px -5px #000000;*/&#13;
+    }&#13;
+    /* line 76, sass/custom/_switches.scss */&#13;
+    .input-switch input[type=checkbox]:focus~.switch {&#13;
+        border: 0px;&#13;
+        box-shadow: 0px;&#13;
+        /*border: 1px solid #278efc;*/&#13;
+        /*box-shadow: 0px 0px 6px 1px #278efc, inset 0px 0px 3px 0px #777;*/&#13;
+    }&#13;
+    /* line 87, sass/custom/_switches.scss */&#13;
+    .input-switch.input-switch-accessibility input[type=checkbox]~.switch:after {&#13;
+        content: '0';&#13;
+        color: #485563;&#13;
+        width: 45%;&#13;
+        position: absolute;&#13;
+        left: 23.5px;&#13;
+        top: 0;&#13;
+        bottom: 0;&#13;
+        margin: 2px;&#13;
+        line-height: 23px;&#13;
+        text-align: center;&#13;
+        font-weight: bold;&#13;
+    }&#13;
+    /* line 104, sass/custom/_switches.scss */&#13;
+    .input-switch.input-switch-accessibility input[type=checkbox]:checked~.switch:after {&#13;
+        content: '1';&#13;
+        color: #fff;&#13;
+        left: 0;&#13;
+    }&#13;
+    button {&#13;
+        margin-right: 5px;&#13;
+        margin-bottom: 5px;&#13;
+        &amp;.btn-slots {&#13;
+            border-color: transparent;&#13;
+            background: $time-slot-bg;&#13;
+            color: $time-slot-text;&#13;
+            width: 70px;&#13;
+            height: 34px;&#13;
+            @media (max-width: 414px) {&#13;
+                width: 75px;&#13;
+            }&#13;
+        }&#13;
+        &amp;.btn-selected {&#13;
+            background: $brand-primary;&#13;
+            color: #fff;&#13;
+        }&#13;
+    }&#13;
+    .no-slots {&#13;
+        color: $brand-danger;&#13;
+    }&#13;
+    .chiclets {&#13;
+        clear: both;&#13;
+    }&#13;
+    .appt-field textarea {&#13;
+        border-radius: 0px;&#13;
+        -webkit-appearance: none;&#13;
+        -webkit-border-radius: 0px;&#13;
+        width: 100%;&#13;
+        resize: none;&#13;
+        font-size: 18px;&#13;
+        color: $bam-dark-gray;&#13;
+        margin-top: 4px;&#13;
+        padding-bottom: 0px;&#13;
+        background-color: transparent;&#13;
+        border: 0px solid transparent;&#13;
+        border-bottom: 1px solid #aaa;&#13;
+    }&#13;
+    .appt-field-placeholder {&#13;
+        opacity: 0.6;&#13;
+        position: relative;&#13;
+    }&#13;
+    .appt-field {&#13;
+        border-bottom: 0px solid transparent;&#13;
+        margin-top: 20px;&#13;
+        margin-bottom: 20px;&#13;
+        clear: both;&#13;
+         :focus {&#13;
+            border-bottom: 1px solid $brand-primary;&#13;
+            color: $brand-primary;&#13;
+        }&#13;
+    }&#13;
+    .appt-field :focus {&#13;
+        border-bottom: 1px solid $brand-primary;&#13;
+        color: $brand-primary;&#13;
+    }&#13;
+    .appt-field input {&#13;
+        padding-left: 0px;&#13;
+        height: 53px;&#13;
+        -webkit-border-radius: 0px;&#13;
+        -moz-border-radius: 0px;&#13;
+        -ms-border-radius: 0px;&#13;
+        border-radius: 0px;&#13;
+        -webkit-appearance: none;&#13;
+        -webkit-border-radius: 0px;&#13;
+        width: 100%;&#13;
+        max-width: 100%;&#13;
+        font-size: 18px;&#13;
+        color: #7f7f7f;&#13;
+        padding-bottom: 0px;&#13;
+        background-color: transparent;&#13;
+        border: 0px solid transparent;&#13;
+        border-bottom: 1px solid #aaa;&#13;
+    }&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>hcm_ap-sch</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>HCM Appointment Scheduling</name>
+        <option_schema>[{"name":"title","label":"Title","type":"string"},{"displayValue":"Task Appointment","name":"task_appointment_record","label":"Task Appointment Definition","type":"reference","value":"u_task_appointment","ed":{"reference":"u_task_appointment"}},{"hint":"Appointment button layout choices","name":"layout","default_value":"Chiclets","label":"Layout Options","type":"choice","choices":[{"label":"Dropdown","value":"Dropdown"},{"label":"Chiclets","value":"Chiclets"},{"label":"Timecards","value":"Timecards"}]},{"hint":"This leverages an out of the box feature that will send an email prior to a date/time value in a task.","name":"allow_reminders","default_value":"","label":"Allow reminders","type":"boolean"},{"name":"max_date","default_value":"30","label":"Maximum available date (in days)","type":"integer"},{"name":"show_appointment_for","label":"Prompt for Appointment For User","type":"boolean"},{"name":"appointment_for_label","default_value":"Appointment For","label":"Label for Appointment For","type":"string"},{"name":"show_short_description","label":"Show Short Description","type":"boolean"},{"name":"show_description","label":"Show Description","type":"boolean"},{"name":"show_location","label":"Show Location","type":"boolean"}]</option_schema>
+        <public>true</public>
+        <roles>x_423236_health_ca.Patient,x_423236_health_ca.admin,x_423236_health_ca.staff</roles>
+        <script><![CDATA[// populate the 'data' variable with catalog item, variables, and variable view
+(function() {
+
+    data.userID = gs.getUserID();
+    data.userName = gs.getUserDisplayName();
+    data.reminderTimes = getReminderChoices();
+    data.dateFormat = getDateFormat();
+
+    function getReminderChoices() {
+        var tempArray = [];
+        var reminderGR = new GlideRecord('sys_choice');
+        reminderGR.addQuery('element', 'remind_me');
+        reminderGR.addQuery('inactive', false);
+        reminderGR.orderBy('sequence');
+        reminderGR.query();
+        while (reminderGR.next()) {
+            var obj = {};
+            $sp.getRecordElements(obj, reminderGR, 'label,sys_id,value');
+            tempArray.push(obj);
+        }
+        return tempArray;
+    }
+
+    function getDateFormat() {
+        var taskApptRec = new GlideRecord("u_task_appointment");
+        taskApptRec.get(options.task_appointment_record);
+        return taskApptRec.getValue("u_widget_date_format");
+    }
+
+    if (input) {
+        if (input.action == 'getTimeSlots') {
+            data.timeSlots = new global.TaskAppointmentUtils().getTimeSlots(options.task_appointment_record, input.selectedDate);
+        }
+        if (input.action == 'setTimeSlots') {
+            data.timeSlotReturn = new global.TaskAppointmentUtils().createAppointment(options.task_appointment_record, input.meetingTime, input.additionalFields);
+        }
+        if (input.action == 'setupReminder') {
+            data.reminderReturn = new global.TaskAppointmentUtils().createReminder(input.taskSysid, input.selectedTime, input.taskUserid);
+        }
+    }
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-02 10:17:14</sys_created_on>
+        <sys_id>dfa87edadb8600101ed2c4ab0b9619e7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>HCM Appointment Scheduling</sys_name>
+        <sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
+        <sys_update_name>sp_widget_dfa87edadb8600101ed2c4ab0b9619e7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-02 10:18:20</sys_updated_on>
+        <template><![CDATA[<svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
+  <symbol id="icon-location" width="20" height="26" viewBox="0 0 20 26">
+    <path d="M9.68 26C8.133 26 0 14.826 0 9.68 0 4.37 4.37 0 9.68 0c5.311 0 9.682 4.37 9.682 9.68C19.362 14.827 11.23 26 9.68 26zm0-24.894c-4.701 0-8.574 3.873-8.574 8.575 0 4.702 7.192 14.162 8.575 15.157 1.383-.995 8.574-10.51 8.574-15.157 0-4.702-3.872-8.575-8.574-8.575z"/>
+    <path d="M9.68 13.83c-2.267 0-4.148-1.881-4.148-4.15 0-2.267 1.88-4.148 4.149-4.148 2.268 0 4.149 1.88 4.149 4.149 0 2.268-1.881 4.149-4.15 4.149zm0-7.192c-1.659 0-3.042 1.383-3.042 3.043 0 1.66 1.383 3.042 3.043 3.042 1.66 0 3.042-1.383 3.042-3.042 0-1.66-1.383-3.043-3.042-3.043z"/>
+  </symbol>
+  <symbol id='icon-arrow' width="23" height="12" viewBox="0 0 23 12">
+    <path fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" d="M1.438.429L11.501 11.57 21.563.43"/>
+  </symbol>
+</svg>
+<div class="appointment-scheduler row">
+    <h3>{{c.options.title}}</h3>
+  <h3>{{c.options}}</h3>
+    <div class="col-xs-12 remove-padding-left slot-selector">
+        <div class='appt-datepicker'>
+            <p class="input-group">
+                <input type="text" class="form-control uidatepicker" uib-datepicker-popup ng-model="c.selectedDate" is-open="c.datePickerPopup.opened" datepicker-options="c.dateOptions" ng-required="true" close-text="Close" ng-change="c.getTimeSlots(c.selectedDate)"
+                    ng-click="c.openDatePickerPopup()" />
+                <span class='appt-dateformatted' ng-click="c.openDatePickerPopup()">{{c.dateFormatted}}</span>
+                <span class='appt-change' ng-click="c.openDatePickerPopup()">CHANGE</span>
+            </p>
+        </div>
+        <!--#####################Chiclet#################################################-->
+        <div class="chiclets" ng-if="c.options.layout == 'Chiclets'">
+            <p class="no-slots" ng-show="c.timeSLots.length == 0">
+                -- No appointments available for selected date --
+            </p>
+            <button class="btn btn-slots" ng-class="{'disabled':slot.taken == 'yes','btn-selected':c.selectedSlot.date_time == slot.date_time }" ng-click="c.selectedSlot = slot" ng-repeat="slot in c.timeSLots">{{slot.time_slot}}</button>
+        </div>
+        <!--##########################Dropdown #########################################-->
+        <div class="form-group col-md-12 remove-padding-left" ng-if="c.options.layout == 'Dropdown'">
+            <p class="no-slots" ng-show="c.timeSLots.length == 0">
+                -- No appointments available for selected date --
+            </p>
+            <select ng-show="c.timeSLots.length != 0" class="form-control" ng-options="slot as slot.time_slot for slot in c.timeSLots" ng-model="c.selectedSlot"></select>
+
+        </div>
+
+        <!--##################### Timecards #################################################-->
+        <div class="chiclets" ng-if="c.options.layout == 'Timecards'">
+            <p class="no-slots" ng-show="c.timeSLots.length == 0">
+                -- No appointments available for selected date --
+            </p>
+            <div class="time-card-container">
+                <div class="time-cards" ng-class="{'btn-selected':c.selectedSlot.date_time == slot.date_time }" ng-click="c.selectedSlot = slot" ng-repeat="slot in c.timeSLots">
+                    <p>{{slot.time_slot}}</p>
+                    <i ng-if="c.selectedSlot.date_time == slot.date_time" class="fa fa-2x fa-clock-o" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+      	<!--################## Appointment For ############################-->
+        <div class="appt-field" ng-if="c.options.show_appointment_for === 'true'">
+          	<label for="user">{{c.options.appointment_for_label}}</label>
+          	<input id="user" ng-class="{'appt-field-placeholder' : !c.appntUserSysid}" typeahead-on-select="c.userChosen($item)" type="text" ng-model="c.appntUser" uib-typeahead="user as user.name for user in c.getUsers($viewValue)"
+                typeahead-no-results="noResults" class="autocomplete" placeholder="Appointment For">
+        </div>
+        <!--################## SHORT DESCRIPTION ############################-->
+        <div ng-if="c.options.show_short_description === 'true'" class='appt-field' ng-class="{'appt-field-placeholder' : c.appntShortDescription.length === 0}">
+            <textarea ng-model='c.appntShortDescription' placeholder='Short description'></textarea>
+        </div>
+        <!--################## DESCRIPTION ############################-->
+        <div ng-if="c.options.show_description === 'true'" class='appt-field' ng-class="{'appt-field-placeholder' : c.appntDescription.length === 0}">
+            <textarea ng-model='c.appntDescription' placeholder='Description'></textarea>
+        </div>
+        <!--################## LOCATION ############################-->
+        <div class="appt-field" ng-if="c.options.show_location === 'true'">
+            <input id="location" ng-class="{'appt-field-placeholder' : !c.appntLocation}" typeahead-on-select="c.locationChosen($item)" type="text" ng-model="c.appntLocation" uib-typeahead="location as location.name for location in c.getLocations($viewValue)"
+                typeahead-no-results="noResults" class="autocomplete" placeholder="Location">
+        </div>
+        <!--################## REMINDER ############################-->
+        <div class='remind-container' ng-if="c.options.allow_reminders === 'true'">
+            <div class='row'>
+                <div class='switch-part'>
+                    <div class="form-group" ng-show="c.timeSLots.length > 0">
+                        <div class="input-switch">
+                            <input ng-model="c.setReminder" type="checkbox">
+                            <label aria-hidden="true" class="switch" ng-click='c.setReminder = !c.setReminder' for="setReminder"></label>
+                            <label aria-hidden="true" class="switch-label" ng-click='c.setReminder = !c.setReminder'>Set Reminder</label>
+                        </div>
+                    </div>
+                </div>
+                <div class='time-selector'>
+                    <div class='fade' ng-class="{'in':c.setReminder===true}">
+                        <select class="form-control reminder-select" ng-options="time as time.label.display_value for time in c.data.reminderTimes" ng-model="c.selectedReminderTime"></select>
+                        <label aria-hidden="true" class="reminder-select-label"> prior.</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id='btnContinue' class="btn btn-primary btn-submit" ng-class="{'disabled':!c.selectedSlot}" ng-click="c.submitTimeSlot(c.selectedDate,c.selectedSlot.date_time)">Submit</button>
+
+        <div class="alert alert-div alert-success" ng-show="c.alertSuccess">
+            <span class="close" ng-click="c.alertSuccess = false">x</span>
+            <p>You are all set. See you on {{c.dateFormatted}} at {{c.timeFormatted}}.</p>
+        </div>
+    </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

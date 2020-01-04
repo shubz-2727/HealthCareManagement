@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page">
+    <sp_page action="INSERT_OR_UPDATE">
+        <category>sc</category>
+        <css/>
+        <draft>false</draft>
+        <dynamic_title_structure>Catalog - Browse</dynamic_title_structure>
+        <id>hcm_category</id>
+        <internal>false</internal>
+        <public>false</public>
+        <roles>snc_external,snc_internal,x_423236_health_ca.Patient,x_423236_health_ca.admin,x_423236_health_ca.doctor,x_423236_health_ca.staff</roles>
+        <short_description/>
+        <sys_class_name>sp_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-02 04:10:06</sys_created_on>
+        <sys_id>11a429d2db0200101ed2c4ab0b961918</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>hcm_category</sys_name>
+        <sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
+        <sys_update_name>sp_page_11a429d2db0200101ed2c4ab0b961918</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-02 04:11:24</sys_updated_on>
+        <title>HCM Catalog </title>
+    </sp_page>
+    <sys_translated_text action="delete_multiple" query="documentkey=11a429d2db0200101ed2c4ab0b961918"/>
+</record_update>

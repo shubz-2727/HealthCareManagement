@@ -6,7 +6,7 @@
         <caller_access/>
         <client_scripts_access>false</client_scripts_access>
         <configuration_access>false</configuration_access>
-        <create_access>false</create_access>
+        <create_access>true</create_access>
         <create_access_controls>true</create_access_controls>
         <delete_access>false</delete_access>
         <extension_model/>
@@ -25,14 +25,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-12-07 15:50:52</sys_created_on>
         <sys_id>dc1a864adbed40101ed2c4ab0b96198e</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Appointment</sys_name>
         <sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
         <sys_update_name>sys_db_object_dc1a864adbed40101ed2c4ab0b96198e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-08 12:35:55</sys_updated_on>
+        <sys_updated_on>2020-01-02 08:57:00</sys_updated_on>
         <update_access>false</update_access>
         <user_role display_value="x_423236_health_ca.appoitment_user" name="x_423236_health_ca.appoitment_user">d178e65adba1c0101ed2c4ab0b9619dc</user_role>
         <ws_access>true</ws_access>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rel_widget_clone">
+    <sp_rel_widget_clone action="INSERT_OR_UPDATE">
+        <child display_value="HR task">607413e9db0200101ed2c4ab0b9619fa</child>
+        <cloned>2019-12-31 04:23:06</cloned>
+        <last_validated>2019-12-31 04:23:06</last_validated>
+        <parent display_value="HRI My Tasks">7bd1e3a7530022002b76da86a11c08b2</parent>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;sp_widget&gt;&lt;category/&gt;&lt;client_script&gt;&lt;![CDATA[function hriMyTasksController($scope) {
+
+	"use strict";
+
+	$scope.init = function(user_id) {
+		$scope.getTasks(user_id);
+	};
+
+	$scope.getTasks = function(user_id) {
+		$scope.data.action = "getTasks";
+		$scope.data.user_id = user_id;
+		$scope.server.update();
+	};
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.media-left i {&amp;#13;
+	font-size: 18px;&amp;#13;
+	margin-top: 3px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.media-note {&amp;#13;
+	font-size: 90%;&amp;#13;
+	color: #b1b1b1;&amp;#13;
+	font-weight: 200;&amp;#13;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance_menu&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list&gt;title&lt;/field_list&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;hri-my-tasks&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;HRI My Tasks&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+	data.user_id = gs.getUserID();
+	data.user_name = gs.getUserName();
+	data.title = $sp.getValue("title");
+	data.short_description = $sp.getValue("short_description");
+
+	if (input &amp;&amp; input.action === 'getTasks')
+		getTasks(data.user_id);
+
+	function getTasks(userId) {
+		data.tasks = new sn_hr_core.hr_Task().getMyTasks(userId);
+	}
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-06-22 23:17:07&lt;/sys_created_on&gt;&lt;sys_id&gt;7bd1e3a7530022002b76da86a11c08b2&lt;/sys_id&gt;&lt;sys_mod_count&gt;24&lt;/sys_mod_count&gt;&lt;sys_name&gt;HRI My Tasks&lt;/sys_name&gt;&lt;sys_package display_value="Human Resources: Service Portal" source="sn_hr_sp"&gt;3d1da2705b021200a4656ede91f91ab6&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Human Resources: Service Portal"&gt;3d1da2705b021200a4656ede91f91ab6&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_7bd1e3a7530022002b76da86a11c08b2&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-09-26 23:08:54&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div ng-class="::{'hidden-xs' : options.hide_xs}" class="panel panel-{{::options.color}} b" ng-init="init(user.sys_id)" ng-show="data.tasks.length &gt; 0"&gt;
+	&lt;div class="panel-heading"&gt;
+		&lt;h4 class="panel-title"&gt;
+			&lt;span ng-if="::options.glyph" class="m-r-sm"&gt;
+				&lt;fa name="{{::options.glyph}}" /&gt;
+			&lt;/span&gt;
+          	{{::options.title}}
+		&lt;/h4&gt;
+	&lt;/div&gt;
+
+	&lt;div class="list-group"&gt;
+		&lt;span class="list-group-item" ng-repeat="task in data.tasks | orderBy: ['order']"&gt;
+			&lt;div class="media text-primary"&gt;
+				&lt;div class="media-left"&gt;
+					&lt;i alt="${Open}" ng-if="!task.finished" class="fa fa-square-o"&gt;&lt;/i&gt;
+          &lt;i alt="${Completed}" ng-if="task.finished" class="fa fa-check-square-o"&gt;&lt;/i&gt;
+				&lt;/div&gt;
+				&lt;div class="media-body"&gt;
+					&lt;a href="?id=hri_task_details&amp;table=sn_hr_core_task&amp;sys_id={{task.sys_id}}" id="task_{{$index}}"&gt;{{::task.short_description}}&lt;/a&gt;
+					&lt;br /&gt;	
+          &lt;span ng-if="!task.finished"&gt;
+					&lt;span class="text-normal media-note" ng-if="task.due_date"&gt;${Due by} {{::task.due_date | date: 'mediumDate' }}&lt;span class="text-warning" ng-if="task.isOverDue"&gt; (${Overdue})&lt;/span&gt;&lt;/span&gt;
+          &lt;/span&gt;
+          &lt;span ng-if="task.finished" class="text-muted media-note"&gt;${Completed at} {{::task.closed_at | date: 'mediumDate'}}&lt;/span&gt;
+        &lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/span&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;</payload>
+        <sys_class_name>sp_rel_widget_clone</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-31 04:23:06</sys_created_on>
+        <sys_id>287413e9db0200101ed2c4ab0b9619fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>607413e9db0200101ed2c4ab0b9619fa</sys_name>
+        <sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
+        <sys_update_name>sp_rel_widget_clone_287413e9db0200101ed2c4ab0b9619fc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-31 04:23:06</sys_updated_on>
+    </sp_rel_widget_clone>
+</record_update>
