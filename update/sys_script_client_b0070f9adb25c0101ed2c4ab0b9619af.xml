@@ -15,8 +15,7 @@
   //set the Requested for value to the currently logged in user.
 
     if(g_form.isNewRecord()){
-        g_form.setValue('u_user_name',g_user.getFullName());
-		
+        g_form.setValue('u_user_name',g_user.getFullName());	
         g_form.setValue('u_string_4',g_user.firstName);
 		g_form.setValue('u_string_5',g_user.lastName);
 		
@@ -52,7 +51,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b0070f9adb25c0101ed2c4ab0b9619af</sys_id>
-        <sys_mod_count>25</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_name>Appointment user id fill</sys_name>
         <sys_overrides/>
         <sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package>
@@ -60,7 +59,7 @@
         <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
         <sys_update_name>sys_script_client_b0070f9adb25c0101ed2c4ab0b9619af</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-11 12:38:35</sys_updated_on>
+        <sys_updated_on>2020-01-06 12:06:24</sys_updated_on>
         <table>x_423236_health_ca_appointment</table>
         <type>onLoad</type>
         <ui_type>10</ui_type>

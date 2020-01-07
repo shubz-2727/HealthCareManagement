@@ -8,14 +8,14 @@
         <hint/>
         <homepage/>
         <image/>
-        <link_type>NEW</link_type>
+        <link_type>DIRECT</link_type>
         <map_page/>
         <mobile_title>Book appointment</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
         <name>itil_appointment</name>
         <order>102</order>
         <override_menu_roles>false</override_menu_roles>
-        <query/>
+        <query>/hcm?id=hcm_appointment</query>
         <report/>
         <roles>x_423236_health_ca.staff,x_423236_health_ca.Patient</roles>
         <sys_class_name>sys_app_module</sys_class_name>
@@ -24,7 +24,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>aefcca0edbed40101ed2c4ab0b961966</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Book appointment</sys_name>
         <sys_overrides/>
         <sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package>
@@ -32,7 +32,7 @@
         <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
         <sys_update_name>sys_app_module_aefcca0edbed40101ed2c4ab0b961966</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-31 06:39:34</sys_updated_on>
+        <sys_updated_on>2020-01-06 05:53:54</sys_updated_on>
         <timeline_page/>
         <title>Book appointment</title>
         <uncancelable>false</uncancelable>

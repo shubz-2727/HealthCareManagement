@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="Comments" section_id="3eec0a0edbed40101ed2c4ab0b9619b5" sys_domain="global" table="x_423236_health_ca_appointment" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_short_description</element>
+            <element>short_description</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-12-10 10:16:45</sys_created_on>
-            <sys_id>840c504bdb2d44101ed2c4ab0b961936</sys_id>
+            <sys_created_on>2020-01-06 11:32:59</sys_created_on>
+            <sys_id>cc60bbe3db8284101ed2c4ab0b96198c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Comments" display_value="Comments" name="x_423236_health_ca_appointment" sys_domain="global" view="Default view">3eec0a0edbed40101ed2c4ab0b9619b5</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-12-10 10:16:45</sys_updated_on>
+            <sys_updated_on>2020-01-06 11:32:59</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>work_notes</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-12-10 10:16:45</sys_created_on>
-            <sys_id>0c0c504bdb2d44101ed2c4ab0b961936</sys_id>
+            <sys_created_on>2020-01-06 11:32:59</sys_created_on>
+            <sys_id>4860bbe3db8284101ed2c4ab0b96198d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Comments" display_value="Comments" name="x_423236_health_ca_appointment" sys_domain="global" view="Default view">3eec0a0edbed40101ed2c4ab0b9619b5</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-12-10 10:16:45</sys_updated_on>
+            <sys_updated_on>2020-01-06 11:32:59</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

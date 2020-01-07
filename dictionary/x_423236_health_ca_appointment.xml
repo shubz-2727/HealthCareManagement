@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="task" label="Appointment" max_length="40" name="x_423236_health_ca_appointment" sizeclass="12" type="collection">
+    <element extends="task" label="Appointment" max_length="40" name="x_423236_health_ca_appointment" sizeclass="15" type="collection">
         <element attributes="edge_encryption_enabled=true" label="Set appointment" max_length="40" name="u_calendar_date_time_6" type="calendar_date_time"/>
-        <element attributes="edge_encryption_enabled=true" label="Date" max_length="40" name="u_date" type="glide_date"/>
-        <element label="Email" max_length="40" name="u_email_2" type="email"/>
+        <element attributes="edge_encryption_enabled=true" label="Date" max_length="40" name="u_date" read_only="true" type="glide_date"/>
+        <element label="Email" max_length="40" name="u_email_2" read_only="true" type="email"/>
         <element label="Future" max_length="40" name="u_future" type="boolean"/>
         <element attributes="edge_encryption_enabled=true" label="MRN No." max_length="40" name="u_mrn_no" type="string"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Priority" max_length="40" name="u_priority" type="string">
@@ -18,6 +18,7 @@
         <element attributes="edge_encryption_enabled=true" label="First Name" max_length="40" name="u_string_4" read_only="true" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Last Name" max_length="40" name="u_string_5" read_only="true" type="string"/>
         <element label="Time" max_length="40" name="u_time" type="glide_time"/>
+        <element attributes="edge_encryption_enabled=true" label="TIME" max_length="40" name="u_time_2" read_only="true" type="string"/>
         <element label="Today" max_length="40" name="u_today" type="boolean"/>
         <element attributes="edge_encryption_enabled=true" label="User name" max_length="40" name="u_user_name" read_only="true" type="string"/>
     </element>

@@ -10,7 +10,7 @@
         <copied_from_name/>
         <description>approve and create report</description>
         <internal_name>doctor_approval</internal_name>
-        <label_cache>[{"name":"Created_1.current.u_string_5","label":"Trigger➛Appointment Record➛Last Name","reference":"","reference_display":"Last Name","type":"string","base_type":"string","parent_table_name":"x_423236_health_ca_appointment","column_name":"u_string_5"},{"name":"Created_1.current.u_string_4","label":"Trigger➛Appointment Record➛First Name","reference":"","reference_display":"First Name","type":"string","base_type":"string","parent_table_name":"x_423236_health_ca_appointment","column_name":"u_string_4"},{"name":"1644a31f-24a1-4864-8159-87bec0b071f0.Table","label":"3➛Table","reference_display":"Table","type":"table_name","base_type":"table_name"},{"name":"1644a31f-24a1-4864-8159-87bec0b071f0.Record","label":"3➛Record","reference":"task","reference_display":"Task","type":"document_id","base_type":"document_id"},{"name":"63f3a24e-a9e1-4d5d-b430-f6c212e534a0.record.u_email_2","label":"1➛Appointment Record➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"x_423236_health_ca_appointment","column_name":"u_email_2"},{"name":"a3e66ad3-941b-4630-be77-407d42a98740.email","label":"2➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference"},{"name":"Created_1.current","label":"Trigger➛Appointment Record","reference":"x_423236_health_ca_appointment","reference_display":"Appointment","type":"reference","base_type":"reference"},{"name":"63f3a24e-a9e1-4d5d-b430-f6c212e534a0.table_name","label":"1➛Appointment Table","reference":"x_423236_health_ca_appointment","reference_display":"Appointment","type":"table_name","base_type":"table_name"},{"name":"63f3a24e-a9e1-4d5d-b430-f6c212e534a0.record","label":"1➛Appointment Record","reference":"x_423236_health_ca_appointment","reference_display":"Appointment","type":"reference","base_type":"reference"}]</label_cache>
+        <label_cache>[{"name":"Created_1.current.opened_by.user_name","label":"Trigger➛Appointment Record➛Opened by➛User ID","reference":"","reference_display":"User ID","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"user_name"},{"name":"Created_1.current.opened_by.last_name","label":"Trigger➛Appointment Record➛Opened by➛Last name","reference":"","reference_display":"Last name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"last_name"},{"name":"Created_1.current.opened_by.first_name","label":"Trigger➛Appointment Record➛Opened by➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name"},{"name":"Created_1.current.opened_by.x_423236_health_ca_u_last_name","label":"Trigger➛Appointment Record➛Opened by➛Last Name","reference":"","reference_display":"Last Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"x_423236_health_ca_u_last_name"},{"name":"Created_1.current.active","label":"Trigger➛Appointment Record➛Active","reference":"","reference_display":"Active","type":"boolean","base_type":"boolean","parent_table_name":"x_423236_health_ca_appointment","column_name":"active"},{"name":"Created_1.current.opened_by.x_423236_health_ca_u_first_name","label":"Trigger➛Appointment Record➛Opened by➛First Name","reference":"","reference_display":"First Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"x_423236_health_ca_u_first_name"},{"name":"Created_1.current.opened_by.email","label":"Trigger➛Appointment Record➛Opened by➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"Created_1.current.u_string_5","label":"Trigger➛Appointment Record➛Last Name","reference":"","reference_display":"Last Name","type":"string","base_type":"string","parent_table_name":"x_423236_health_ca_appointment","column_name":"u_string_5"},{"name":"Created_1.current.u_string_4","label":"Trigger➛Appointment Record➛First Name","reference":"","reference_display":"First Name","type":"string","base_type":"string","parent_table_name":"x_423236_health_ca_appointment","column_name":"u_string_4"},{"name":"1644a31f-24a1-4864-8159-87bec0b071f0.Table","label":"3➛Table","reference_display":"Table","type":"table_name","base_type":"table_name"},{"name":"1644a31f-24a1-4864-8159-87bec0b071f0.Record","label":"3➛Record","reference":"task","reference_display":"Task","type":"document_id","base_type":"document_id"},{"name":"63f3a24e-a9e1-4d5d-b430-f6c212e534a0.record.u_email_2","label":"1➛Appointment Record➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"x_423236_health_ca_appointment","column_name":"u_email_2"},{"name":"a3e66ad3-941b-4630-be77-407d42a98740.email","label":"2➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference"},{"name":"Created_1.current","label":"Trigger➛Appointment Record","reference":"x_423236_health_ca_appointment","reference_display":"Appointment","type":"reference","base_type":"reference"},{"name":"63f3a24e-a9e1-4d5d-b430-f6c212e534a0.table_name","label":"1➛Appointment Table","reference":"x_423236_health_ca_appointment","reference_display":"Appointment","type":"table_name","base_type":"table_name"},{"name":"63f3a24e-a9e1-4d5d-b430-f6c212e534a0.record","label":"1➛Appointment Record","reference":"x_423236_health_ca_appointment","reference_display":"Appointment","type":"reference","base_type":"reference"},{"name":"Created_1.current.assigned_to","label":"Trigger➛Appointment Record➛Doctor","reference":"x_423236_health_ca_add_doctor_staff","reference_display":"Doctor","type":"reference","base_type":"reference","parent_table_name":"x_423236_health_ca_appointment","column_name":"assigned_to"}]</label_cache>
         <latest_snapshot>042b4a9bdb65c4101ed2c4ab0b96196b</latest_snapshot>
         <master_snapshot>09328edfdb25c4101ed2c4ab0b9619c9</master_snapshot>
         <name>Doctor approval</name>
@@ -20,14 +20,14 @@
         <sc_callable>false</sc_callable>
         <show_draft_actions>false</show_draft_actions>
         <show_triggered_flows>false</show_triggered_flows>
-        <status>published</status>
+        <status>draft</status>
         <sys_class_name>sys_hub_flow</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-12-09 07:05:39</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>4ba66e2adbe104101ed2c4ab0b961923</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>Doctor approval</sys_name>
         <sys_overrides/>
         <sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package>
@@ -35,7 +35,7 @@
         <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
         <sys_update_name>sys_hub_flow_4ba66e2adbe104101ed2c4ab0b961923</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-11 12:49:19</sys_updated_on>
+        <sys_updated_on>2020-01-07 05:35:03</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=4ba66e2adbe104101ed2c4ab0b961923"/>
@@ -81,10 +81,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-12-11 12:34:11</sys_created_on>
         <sys_id>36050ad3db65c4101ed2c4ab0b961993</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
-        <sys_updated_by>HCM0001026</sys_updated_by>
-        <sys_updated_on>2019-12-11 13:00:46</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-07 05:35:03</sys_updated_on>
         <ui_id>1644a31f-24a1-4864-8159-87bec0b071f0</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=36050ad3db65c4101ed2c4ab0b961993"/>
@@ -135,11 +135,11 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-12-11 12:34:21</sys_created_on>
         <sys_id>d9154ad3db65c4101ed2c4ab0b96198b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-11 12:34:21</sys_updated_on>
+        <sys_updated_on>2020-01-07 05:35:03</sys_updated_on>
         <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
-        <value>u_string_2={{Created_1.current.u_string_4}}^u_string_3={{Created_1.current.u_string_5}}</value>
+        <value>u_string_2={{Created_1.current.opened_by.first_name}}^u_string_3={{Created_1.current.opened_by.last_name}}^u_mrn={{Created_1.current.opened_by.user_name}}^u_reference_6={{Created_1.current.assigned_to}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>task_table</field>
@@ -180,10 +180,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-12-11 10:43:19</sys_created_on>
         <sys_id>47abed97dbe1c4101ed2c4ab0b9619e3</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
-        <sys_updated_by>HCM0001026</sys_updated_by>
-        <sys_updated_on>2019-12-11 13:00:46</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-07 05:35:03</sys_updated_on>
         <ui_id>63f3a24e-a9e1-4d5d-b430-f6c212e534a0</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=47abed97dbe1c4101ed2c4ab0b9619e3"/>
@@ -331,10 +331,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-12-11 10:43:19</sys_created_on>
         <sys_id>8bab21d7dbe1c4101ed2c4ab0b961901</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
-        <sys_updated_by>HCM0001026</sys_updated_by>
-        <sys_updated_on>2019-12-11 13:00:46</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-07 05:35:03</sys_updated_on>
         <ui_id>a3e66ad3-941b-4630-be77-407d42a98740</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=8bab21d7dbe1c4101ed2c4ab0b961901"/>
@@ -360,10 +360,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-12-11 12:21:45</sys_created_on>
         <sys_id>78328edfdb25c4101ed2c4ab0b961991</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-11 12:49:08</sys_updated_on>
-        <value/>
+        <sys_updated_on>2020-01-07 05:21:42</sys_updated_on>
+        <value>x_423236_health_ca_appointment</value>
         <variable display_value="">19806bf4a70323008299b39f087901d4</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -443,13 +443,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-12-11 12:21:45</sys_created_on>
         <sys_id>f8328edfdb25c4101ed2c4ab0b961990</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-11 12:21:45</sys_updated_on>
+        <sys_updated_on>2020-01-07 05:21:42</sys_updated_on>
         <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
         <value>&lt;p data-tinymcerootblock=""&gt;Your appointment is&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillid="e207f2bf-0286-46c6-af97-c11794afc059" data-pillvalue="{{63f3a24e-a9e1-4d5d-b430-f6c212e534a0.record.approval}}"&gt;&lt;span class="data_pill " contenteditable="false" data-pillid="e207f2bf-0286-46c6-af97-c11794afc059" data-pillvalue="{{63f3a24e-a9e1-4d5d-b430-f6c212e534a0.record.approval}}"&gt;1➛Appointment Record➛Approval&lt;/span&gt;&lt;/span&gt;.&lt;/p&gt;
 &lt;p data-tinymcerootblock=""&gt;Date :&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillid="ac9e50f7-5ed4-4a05-a1e4-a221f09897fc" data-pillvalue="{{63f3a24e-a9e1-4d5d-b430-f6c212e534a0.record.u_date}}"&gt;&lt;span class="data_pill " contenteditable="false" data-pillid="ac9e50f7-5ed4-4a05-a1e4-a221f09897fc" data-pillvalue="{{63f3a24e-a9e1-4d5d-b430-f6c212e534a0.record.u_date}}"&gt;1➛Appointment Record➛Date&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p data-tinymcerootblock=""&gt;Time :&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillid="710dd91d-2bf2-413b-8f03-923003687ab3" data-pillvalue="{{63f3a24e-a9e1-4d5d-b430-f6c212e534a0.record.u_time}}"&gt;&lt;span class="data_pill " contenteditable="false" data-pillid="710dd91d-2bf2-413b-8f03-923003687ab3" data-pillvalue="{{63f3a24e-a9e1-4d5d-b430-f6c212e534a0.record.u_time}}"&gt;1➛Appointment Record➛Time&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</value>
+&lt;p data-tinymcerootblock=""&gt;Time :&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillid="36762146-025a-473f-8c06-fda442cc90b0" data-pillvalue="{{Created_1.current.u_time_2}}"&gt;&lt;span class="data_pill " contenteditable="false" data-pillid="36762146-025a-473f-8c06-fda442cc90b0" data-pillvalue="{{Created_1.current.u_time_2}}"&gt;Trigger➛Appointment Record➛TIME&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>ah_subject</field>
@@ -481,11 +481,11 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-12-11 12:21:45</sys_created_on>
         <sys_id>38328edfdb25c4101ed2c4ab0b961990</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-11 12:21:45</sys_updated_on>
+        <sys_updated_on>2020-01-07 05:21:42</sys_updated_on>
         <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
-        <value>{{63f3a24e-a9e1-4d5d-b430-f6c212e534a0.record.u_email_2}} </value>
+        <value>{{63f3a24e-a9e1-4d5d-b430-f6c212e534a0.record.u_email_2}} {{Created_1.current.opened_by.email}} </value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>ah_to</field>
@@ -517,11 +517,11 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-12-11 12:21:45</sys_created_on>
         <sys_id>bc328edfdb25c4101ed2c4ab0b961990</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-11 12:49:08</sys_updated_on>
+        <sys_updated_on>2020-01-07 05:21:42</sys_updated_on>
         <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
-        <value/>
+        <value>{{63f3a24e-a9e1-4d5d-b430-f6c212e534a0.record}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>table_name</field>
@@ -557,10 +557,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-12-11 10:43:19</sys_created_on>
         <sys_id>f2abed97dbe1c4101ed2c4ab0b9619df</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-11 12:49:19</sys_updated_on>
+        <sys_updated_on>2020-01-07 05:35:03</sys_updated_on>
         <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -612,7 +612,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -670,14 +670,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-12-11 10:43:19</sys_created_on>
         <sys_id>3aab2157dbe1c4101ed2c4ab0b96194a</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-11 12:49:18</sys_updated_on>
+        <sys_updated_on>2020-01-07 05:21:41</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -693,7 +693,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -751,14 +751,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-12-11 10:43:19</sys_created_on>
         <sys_id>7aabed97dbe1c4101ed2c4ab0b9619d8</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-11 12:49:18</sys_updated_on>
+        <sys_updated_on>2020-01-07 05:21:41</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -786,10 +786,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-12-11 12:34:11</sys_created_on>
         <sys_id>36050ad3db65c4101ed2c4ab0b961993</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
-        <sys_updated_by>HCM0001026</sys_updated_by>
-        <sys_updated_on>2019-12-11 13:00:46</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-07 05:35:03</sys_updated_on>
         <ui_id>1644a31f-24a1-4864-8159-87bec0b071f0</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=36050ad3db65c4101ed2c4ab0b961993"/>
@@ -840,11 +840,11 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-12-11 12:34:21</sys_created_on>
         <sys_id>d9154ad3db65c4101ed2c4ab0b96198b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-11 12:34:21</sys_updated_on>
+        <sys_updated_on>2020-01-07 05:35:03</sys_updated_on>
         <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
-        <value>u_string_2={{Created_1.current.u_string_4}}^u_string_3={{Created_1.current.u_string_5}}</value>
+        <value>u_string_2={{Created_1.current.opened_by.first_name}}^u_string_3={{Created_1.current.opened_by.last_name}}^u_mrn={{Created_1.current.opened_by.user_name}}^u_reference_6={{Created_1.current.assigned_to}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>task_table</field>
@@ -885,10 +885,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-12-11 10:43:19</sys_created_on>
         <sys_id>47abed97dbe1c4101ed2c4ab0b9619e3</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
-        <sys_updated_by>HCM0001026</sys_updated_by>
-        <sys_updated_on>2019-12-11 13:00:46</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-07 05:35:03</sys_updated_on>
         <ui_id>63f3a24e-a9e1-4d5d-b430-f6c212e534a0</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=47abed97dbe1c4101ed2c4ab0b9619e3"/>
@@ -1036,10 +1036,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-12-11 10:43:19</sys_created_on>
         <sys_id>8bab21d7dbe1c4101ed2c4ab0b961901</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
-        <sys_updated_by>HCM0001026</sys_updated_by>
-        <sys_updated_on>2019-12-11 13:00:46</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-07 05:35:03</sys_updated_on>
         <ui_id>a3e66ad3-941b-4630-be77-407d42a98740</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=8bab21d7dbe1c4101ed2c4ab0b961901"/>
@@ -1065,10 +1065,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-12-11 12:21:45</sys_created_on>
         <sys_id>78328edfdb25c4101ed2c4ab0b961991</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-11 12:49:08</sys_updated_on>
-        <value/>
+        <sys_updated_on>2020-01-07 05:21:42</sys_updated_on>
+        <value>x_423236_health_ca_appointment</value>
         <variable display_value="">19806bf4a70323008299b39f087901d4</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1148,13 +1148,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-12-11 12:21:45</sys_created_on>
         <sys_id>f8328edfdb25c4101ed2c4ab0b961990</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-11 12:21:45</sys_updated_on>
+        <sys_updated_on>2020-01-07 05:21:42</sys_updated_on>
         <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
         <value>&lt;p data-tinymcerootblock=""&gt;Your appointment is&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillid="e207f2bf-0286-46c6-af97-c11794afc059" data-pillvalue="{{63f3a24e-a9e1-4d5d-b430-f6c212e534a0.record.approval}}"&gt;&lt;span class="data_pill " contenteditable="false" data-pillid="e207f2bf-0286-46c6-af97-c11794afc059" data-pillvalue="{{63f3a24e-a9e1-4d5d-b430-f6c212e534a0.record.approval}}"&gt;1➛Appointment Record➛Approval&lt;/span&gt;&lt;/span&gt;.&lt;/p&gt;
 &lt;p data-tinymcerootblock=""&gt;Date :&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillid="ac9e50f7-5ed4-4a05-a1e4-a221f09897fc" data-pillvalue="{{63f3a24e-a9e1-4d5d-b430-f6c212e534a0.record.u_date}}"&gt;&lt;span class="data_pill " contenteditable="false" data-pillid="ac9e50f7-5ed4-4a05-a1e4-a221f09897fc" data-pillvalue="{{63f3a24e-a9e1-4d5d-b430-f6c212e534a0.record.u_date}}"&gt;1➛Appointment Record➛Date&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p data-tinymcerootblock=""&gt;Time :&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillid="710dd91d-2bf2-413b-8f03-923003687ab3" data-pillvalue="{{63f3a24e-a9e1-4d5d-b430-f6c212e534a0.record.u_time}}"&gt;&lt;span class="data_pill " contenteditable="false" data-pillid="710dd91d-2bf2-413b-8f03-923003687ab3" data-pillvalue="{{63f3a24e-a9e1-4d5d-b430-f6c212e534a0.record.u_time}}"&gt;1➛Appointment Record➛Time&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</value>
+&lt;p data-tinymcerootblock=""&gt;Time :&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillid="36762146-025a-473f-8c06-fda442cc90b0" data-pillvalue="{{Created_1.current.u_time_2}}"&gt;&lt;span class="data_pill " contenteditable="false" data-pillid="36762146-025a-473f-8c06-fda442cc90b0" data-pillvalue="{{Created_1.current.u_time_2}}"&gt;Trigger➛Appointment Record➛TIME&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>ah_subject</field>
@@ -1186,11 +1186,11 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-12-11 12:21:45</sys_created_on>
         <sys_id>38328edfdb25c4101ed2c4ab0b961990</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-11 12:21:45</sys_updated_on>
+        <sys_updated_on>2020-01-07 05:21:42</sys_updated_on>
         <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
-        <value>{{63f3a24e-a9e1-4d5d-b430-f6c212e534a0.record.u_email_2}} </value>
+        <value>{{63f3a24e-a9e1-4d5d-b430-f6c212e534a0.record.u_email_2}} {{Created_1.current.opened_by.email}} </value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>ah_to</field>
@@ -1222,11 +1222,11 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-12-11 12:21:45</sys_created_on>
         <sys_id>bc328edfdb25c4101ed2c4ab0b961990</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-11 12:49:08</sys_updated_on>
+        <sys_updated_on>2020-01-07 05:21:42</sys_updated_on>
         <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
-        <value/>
+        <value>{{63f3a24e-a9e1-4d5d-b430-f6c212e534a0.record}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>table_name</field>

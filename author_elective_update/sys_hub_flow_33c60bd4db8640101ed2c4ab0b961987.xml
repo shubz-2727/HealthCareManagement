@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>add_user_to_ad</internal_name>
+        <label_cache>null</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>ADD user to AD </name>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-27 06:11:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>33c60bd4db8640101ed2c4ab0b961987</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ADD user to AD </sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
+        <sys_update_name>sys_hub_flow_33c60bd4db8640101ed2c4ab0b961987</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-27 06:11:07</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=33c60bd4db8640101ed2c4ab0b961987"/>
+    <sys_variable_value action="delete_multiple" query="document_key=33c60bd4db8640101ed2c4ab0b961987"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=33c60bd4db8640101ed2c4ab0b961987^sys_idNOT INffc60bd4db8640101ed2c4ab0b961988"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>33c60bd4db8640101ed2c4ab0b961987</id>
+        <name>ADD user to AD </name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-27 06:11:07</sys_created_on>
+        <sys_id>ffc60bd4db8640101ed2c4ab0b961988</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-27 06:11:07</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</application>
+        <file_path/>
+        <instance_id>0dfc6f02db7bbb008aea21c4059619eb</instance_id>
+        <instance_name>dev93413</instance_name>
+        <name>sys_hub_flow_33c60bd4db8640101ed2c4ab0b961987</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow"><sys_hub_flow action="INSERT_OR_UPDATE"><access>public</access><acls/><active>false</active><annotation/><callable_by_client_api>false</callable_by_client_api><category/><copied_from/><copied_from_name/><description/><internal_name>add_user_to_ad</internal_name><label_cache>null</label_cache><latest_snapshot/><master_snapshot/><name>ADD user to AD </name><outputs/><remote_trigger_id/><run_as>user</run_as><sc_callable>false</sc_callable><show_draft_actions>false</show_draft_actions><show_triggered_flows>false</show_triggered_flows><status>draft</status><sys_class_name>sys_hub_flow</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2019-12-27 06:11:07</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>33c60bd4db8640101ed2c4ab0b961987</sys_id><sys_mod_count>0</sys_mod_count><sys_name>ADD user to AD </sys_name><sys_overrides/><sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package><sys_policy/><sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope><sys_update_name>sys_hub_flow_33c60bd4db8640101ed2c4ab0b961987</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-12-27 06:11:07</sys_updated_on><type>flow</type></sys_hub_flow><sys_translated_text action="delete_multiple" query="documentkey=33c60bd4db8640101ed2c4ab0b961987"/><sys_variable_value action="delete_multiple" query="document_key=33c60bd4db8640101ed2c4ab0b961987"/><sys_flow_cat_variable_model action="delete_multiple" query="id=33c60bd4db8640101ed2c4ab0b961987^sys_idNOT INffc60bd4db8640101ed2c4ab0b961988"/><sys_flow_cat_variable_model action="INSERT_OR_UPDATE"><id>33c60bd4db8640101ed2c4ab0b961987</id><name>ADD user to AD </name><sys_created_by>admin</sys_created_by><sys_created_on>2019-12-27 06:11:07</sys_created_on><sys_id>ffc60bd4db8640101ed2c4ab0b961988</sys_id><sys_mod_count>0</sys_mod_count><sys_scope/><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-12-27 06:11:07</sys_updated_on></sys_flow_cat_variable_model></record_update>]]></payload>
+        <payload_hash>583954114</payload_hash>
+        <record_name>ADD user to AD </record_name>
+        <reverted_from/>
+        <source>f8758a42dbed40101ed2c4ab0b96190c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-27 06:11:08</sys_created_on>
+        <sys_id>73c6c718db8640101ed2c4ab0b9619b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16f45fae4660000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-27 06:11:08</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>bbc6c718af864010dc887ee9501902b5</update_guid>
+        <update_guid_history>bbc6c718af864010dc887ee9501902b5:583954114</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-07 05:22:06</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>218746d1defb42d881f865dd84451564</sys_id>
+        <sys_metadata>33c60bd4db8640101ed2c4ab0b961987</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ADD user to AD </sys_name>
+        <sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
+        <sys_scope_delete display_value="">52302f37b32f42cc9fcf05efa4575319</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_33c60bd4db8640101ed2c4ab0b961987</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_33c60bd4db8640101ed2c4ab0b961987">73c6c718db8640101ed2c4ab0b9619b6</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-07 05:22:06</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -4,13 +4,13 @@
             <element>number</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-12-11 12:47:45</sys_created_on>
-            <sys_id>692882d7db65c4101ed2c4ab0b96198c</sys_id>
+            <sys_created_on>2020-01-05 06:16:06</sys_created_on>
+            <sys_id>5c4e1d5bdb8604101ed2c4ab0b961936</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_423236_health_ca_patient_treatment_report" sys_domain="global" view="Default view">ed25459adbe980101ed2c4ab0b96195c</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-12-11 12:47:45</sys_updated_on>
+            <sys_updated_on>2020-01-05 06:16:06</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,27 +18,27 @@
             <element>u_mrn</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-12-11 12:47:45</sys_created_on>
-            <sys_id>ed2882d7db65c4101ed2c4ab0b96198c</sys_id>
+            <sys_created_on>2020-01-05 06:16:06</sys_created_on>
+            <sys_id>d44e1d5bdb8604101ed2c4ab0b961937</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_423236_health_ca_patient_treatment_report" sys_domain="global" view="Default view">ed25459adbe980101ed2c4ab0b96195c</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-12-11 12:47:45</sys_updated_on>
+            <sys_updated_on>2020-01-05 06:16:06</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_string_2</element>
+            <element>u_name</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-12-11 12:47:45</sys_created_on>
-            <sys_id>652882d7db65c4101ed2c4ab0b96198d</sys_id>
+            <sys_created_on>2020-01-05 06:16:06</sys_created_on>
+            <sys_id>5c4e1d5bdb8604101ed2c4ab0b961937</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_423236_health_ca_patient_treatment_report" sys_domain="global" view="Default view">ed25459adbe980101ed2c4ab0b96195c</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-12-11 12:47:45</sys_updated_on>
+            <sys_updated_on>2020-01-05 06:16:06</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>u_blood_group</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-12-11 12:47:45</sys_created_on>
-            <sys_id>e92882d7db65c4101ed2c4ab0b96198d</sys_id>
+            <sys_created_on>2020-01-05 06:16:06</sys_created_on>
+            <sys_id>d04e1d5bdb8604101ed2c4ab0b961938</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_423236_health_ca_patient_treatment_report" sys_domain="global" view="Default view">ed25459adbe980101ed2c4ab0b96195c</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-12-11 12:47:45</sys_updated_on>
+            <sys_updated_on>2020-01-05 06:16:06</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -60,13 +60,13 @@
             <element>.split</element>
             <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-12-11 12:47:45</sys_created_on>
-            <sys_id>612882d7db65c4101ed2c4ab0b96198e</sys_id>
+            <sys_created_on>2020-01-05 06:16:06</sys_created_on>
+            <sys_id>584e1d5bdb8604101ed2c4ab0b961938</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_423236_health_ca_patient_treatment_report" sys_domain="global" view="Default view">ed25459adbe980101ed2c4ab0b96195c</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-12-11 12:47:45</sys_updated_on>
+            <sys_updated_on>2020-01-05 06:16:06</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -74,13 +74,13 @@
             <element>priority</element>
             <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-12-11 12:47:45</sys_created_on>
-            <sys_id>e52882d7db65c4101ed2c4ab0b96198e</sys_id>
+            <sys_created_on>2020-01-05 06:16:06</sys_created_on>
+            <sys_id>dc4e1d5bdb8604101ed2c4ab0b961938</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_423236_health_ca_patient_treatment_report" sys_domain="global" view="Default view">ed25459adbe980101ed2c4ab0b96195c</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-12-11 12:47:45</sys_updated_on>
+            <sys_updated_on>2020-01-05 06:16:06</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -88,27 +88,13 @@
             <element>state</element>
             <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-12-11 12:47:45</sys_created_on>
-            <sys_id>6d2882d7db65c4101ed2c4ab0b96198e</sys_id>
+            <sys_created_on>2020-01-05 06:16:06</sys_created_on>
+            <sys_id>544e1d5bdb8604101ed2c4ab0b961939</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_423236_health_ca_patient_treatment_report" sys_domain="global" view="Default view">ed25459adbe980101ed2c4ab0b96195c</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-12-11 12:47:45</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_string_3</element>
-            <position>7</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-12-11 12:47:45</sys_created_on>
-            <sys_id>e12882d7db65c4101ed2c4ab0b96198f</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_423236_health_ca_patient_treatment_report" sys_domain="global" view="Default view">ed25459adbe980101ed2c4ab0b96195c</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-12-11 12:47:45</sys_updated_on>
+            <sys_updated_on>2020-01-05 06:16:06</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

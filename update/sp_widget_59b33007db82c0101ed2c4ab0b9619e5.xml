@@ -9,35 +9,38 @@
         <description/>
         <docs/>
         <field_list/>
-        <has_preview>true</has_preview>
-        <id>patient_form</id>
+        <has_preview>false</has_preview>
+        <id>patient_report</id>
         <internal>false</internal>
         <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
-        <name>Patient Form</name>
+        <name>Patient report</name>
         <option_schema/>
-        <public>true</public>
+        <public>false</public>
         <roles/>
         <script><![CDATA[(function() {
   /* populate the 'data' object */
   /* e.g., data.table = $sp.getValue('table'); */
 	
-	data.formWidget = { table: "x_423236_health_ca_patient", sys_id: "-1",view : "Service_portal", hideRelatedLists: false };
+		data.formWidget = { table: "x_423236_health_ca_patient_treatment_report", sys_id: "-1",view : "Default view", hideRelatedLists: false };
+
+
 })();]]></script>
         <servicenow>false</servicenow>
         <sys_class_name>sp_widget</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-01-02 05:57:51</sys_created_on>
-        <sys_id>3b4db51edb4200101ed2c4ab0b96197f</sys_id>
-        <sys_mod_count>6</sys_mod_count>
-        <sys_name>Patient Form</sys_name>
+        <sys_created_on>2020-01-04 08:31:44</sys_created_on>
+        <sys_id>59b33007db82c0101ed2c4ab0b9619e5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Patient report</sys_name>
         <sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
-        <sys_update_name>sp_widget_3b4db51edb4200101ed2c4ab0b96197f</sys_update_name>
+        <sys_update_name>sp_widget_59b33007db82c0101ed2c4ab0b9619e5</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-01-05 06:53:59</sys_updated_on>
+        <sys_updated_on>2020-01-04 08:33:26</sys_updated_on>
         <template><![CDATA[<div>
-<widget id="widget-form" options='data.formWidget'>
+<!-- your widget template -->
+  <widget id="widget-form" options='data.formWidget'>
   </widget>
 </div>]]></template>
     </sp_widget>

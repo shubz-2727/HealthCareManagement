@@ -2,7 +2,7 @@
     <sp_portal action="INSERT_OR_UPDATE">
         <css_variables/>
         <default>false</default>
-        <homepage display_value="sc_home">fe87a11147132100ba13a5554ee490b9</homepage>
+        <homepage display_value="base_page">9fc293a9db0200101ed2c4ab0b9619d2</homepage>
         <icon/>
         <kb_knowledge_base/>
         <kb_knowledge_page/>
@@ -20,14 +20,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-12-11 15:41:49</sys_created_on>
         <sys_id>87ae6653db29c4101ed2c4ab0b9619fb</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Health Care Management</sys_name>
         <sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
         <sys_update_name>sp_portal_87ae6653db29c4101ed2c4ab0b9619fb</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-11 15:50:38</sys_updated_on>
+        <sys_updated_on>2020-01-04 08:25:19</sys_updated_on>
         <theme/>
         <title>Health Care Management</title>
         <ts_index_group/>

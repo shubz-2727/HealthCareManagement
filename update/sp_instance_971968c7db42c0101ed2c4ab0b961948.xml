@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">fa19acc7db42c0101ed2c4ab0b961984</sp_column>
+        <sp_widget display_value="HCM appointment List">f04528c3db42c0101ed2c4ab0b961980</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-04 07:45:26</sys_created_on>
+        <sys_id>971968c7db42c0101ed2c4ab0b961948</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Today's Appointment</sys_name>
+        <sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
+        <sys_update_name>sp_instance_971968c7db42c0101ed2c4ab0b961948</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-04 07:57:55</sys_updated_on>
+        <title>Today's Appointment</title>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"title": {
+		"value": "Today's Appointment",
+		"displayValue": "Today's Appointment"
+	},
+	"task_appointment": {
+		"value": "a8772087db42c0101ed2c4ab0b9619ee",
+		"displayValue": "Dwayne Johnson"
+	},
+	"show_short_description": {
+		"value": "true",
+		"displayValue": "true"
+	},
+	"show_location": {
+		"value": "",
+		"displayValue": ""
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=971968c7db42c0101ed2c4ab0b961948"/>
+</record_update>

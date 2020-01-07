@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container">
+    <sp_container action="INSERT_OR_UPDATE">
+        <background_color/>
+        <background_image/>
+        <background_style>default</background_style>
+        <bootstrap_alt>false</bootstrap_alt>
+        <class_name/>
+        <container_class_name/>
+        <name>appoitment list - Container 1</name>
+        <order>1</order>
+        <sp_page display_value="appoitment_list">6294a08bdb02c0101ed2c4ab0b9619e6</sp_page>
+        <subheader>false</subheader>
+        <sys_class_name>sp_container</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-04 07:25:44</sys_created_on>
+        <sys_id>a294e883db42c0101ed2c4ab0b9619eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>appoitment list - Container 1</sys_name>
+        <sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
+        <sys_update_name>sp_container_a294e883db42c0101ed2c4ab0b9619eb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-04 07:25:44</sys_updated_on>
+        <title/>
+        <width>container</width>
+    </sp_container>
+</record_update>

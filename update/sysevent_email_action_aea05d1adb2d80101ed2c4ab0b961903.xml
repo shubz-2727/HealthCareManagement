@@ -6,7 +6,7 @@
         <advanced_condition/>
         <affected_field_on_event/>
         <category display_value="New Register" name="New Register">7291dd5adb2d80101ed2c4ab0b9619f8</category>
-        <collection>sys_user</collection>
+        <collection>x_423236_health_ca_patient</collection>
         <condition/>
         <content_type>text/html</content_type>
         <default_interval/>
@@ -48,7 +48,7 @@
         <omit_watermark>false</omit_watermark>
         <order>100</order>
         <push_message_only>false</push_message_only>
-        <recipient_fields>email</recipient_fields>
+        <recipient_fields>user_name</recipient_fields>
         <recipient_groups/>
         <recipient_users/>
         <reply_to/>
@@ -63,7 +63,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>aea05d1adb2d80101ed2c4ab0b961903</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>notify new registration</sys_name>
         <sys_overrides/>
         <sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package>
@@ -71,7 +71,7 @@
         <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
         <sys_update_name>sysevent_email_action_aea05d1adb2d80101ed2c4ab0b961903</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-01-02 04:03:29</sys_updated_on>
+        <sys_updated_on>2020-01-07 08:15:23</sys_updated_on>
         <sys_version>2</sys_version>
         <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
         <type>email</type>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">a834b32adb0e40101ed2c4ab0b96195c</sp_column>
+        <sp_widget display_value="new Appointment">0bd984f6db4e40101ed2c4ab0b96195b</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-04 06:50:49</sys_created_on>
+        <sys_id>d39c944bdb02c0101ed2c4ab0b96194b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Book Appointment</sys_name>
+        <sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
+        <sys_update_name>sp_instance_d39c944bdb02c0101ed2c4ab0b96194b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-06 11:16:39</sys_updated_on>
+        <title>Book Appointment</title>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"title": {
+		"value": "Book Appointment",
+		"displayValue": "Book Appointment"
+	},
+	"max_date": {
+		"value": 30,
+		"displayValue": "30"
+	},
+	"shoow_description": {
+		"value": "true",
+		"displayValue": "true"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=d39c944bdb02c0101ed2c4ab0b96194b"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</application>
+        <file_path/>
+        <instance_id>0dfc6f02db7bbb008aea21c4059619eb</instance_id>
+        <instance_name>dev93413</instance_name>
+        <name>sp_instance_d39c944bdb02c0101ed2c4ab0b96194b</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance"&gt;&lt;sp_instance action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;order&gt;1&lt;/order&gt;&lt;roles/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="1"&gt;a834b32adb0e40101ed2c4ab0b96195c&lt;/sp_column&gt;&lt;sp_widget display_value="new Appointment"&gt;0bd984f6db4e40101ed2c4ab0b96195b&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-01-04 06:50:49&lt;/sys_created_on&gt;&lt;sys_id&gt;d39c944bdb02c0101ed2c4ab0b96194b&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Book Appointment&lt;/sys_name&gt;&lt;sys_package display_value="Health Care Management" source="x_423236_health_ca"&gt;38754642dbed40101ed2c4ab0b9619f5&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Health Care Management"&gt;38754642dbed40101ed2c4ab0b9619f5&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_d39c944bdb02c0101ed2c4ab0b96194b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-01-06 11:16:39&lt;/sys_updated_on&gt;&lt;title&gt;Book Appointment&lt;/title&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"title": {
+		"value": "Book Appointment",
+		"displayValue": "Book Appointment"
+	},
+	"max_date": {
+		"value": 30,
+		"displayValue": "30"
+	},
+	"shoow_description": {
+		"value": "true",
+		"displayValue": "true"
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=d39c944bdb02c0101ed2c4ab0b96194b"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>43210175</payload_hash>
+        <record_name>Book Appointment</record_name>
+        <reverted_from/>
+        <source>f8758a42dbed40101ed2c4ab0b96190c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-06 11:16:39</sys_created_on>
+        <sys_id>78acef6fdb4284101ed2c4ab0b961969</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16f7a92350d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-06 11:16:39</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>b0acef6f754284100ee6ec641c516069</update_guid>
+        <update_guid_history>b0acef6f754284100ee6ec641c516069:43210175,5f9c944b1a02c0109db3896705a79b4c:-1082066505</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Book Appointment">c5ed2f23db8284101ed2c4ab0b96194d</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-06 11:22:08</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>42d8f848cdae4cc1b5ee759ac451ebd9</sys_id>
+        <sys_metadata>d39c944bdb02c0101ed2c4ab0b96194b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Book Appointment</sys_name>
+        <sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
+        <sys_scope_delete display_value="">52302f37b32f42cc9fcf05efa4575319</sys_scope_delete>
+        <sys_update_name>sp_instance_d39c944bdb02c0101ed2c4ab0b96194b</sys_update_name>
+        <sys_update_version display_value="sp_instance_d39c944bdb02c0101ed2c4ab0b96194b">78acef6fdb4284101ed2c4ab0b961969</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-06 11:22:08</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

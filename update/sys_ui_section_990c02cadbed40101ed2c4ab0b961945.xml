@@ -1,86 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="Book appoitment" section_id="990c02cadbed40101ed2c4ab0b961945" sys_domain="global" table="x_423236_health_ca_appointment" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_mrn_no</element>
+            <element>opened_by</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-01-02 08:40:53</sys_created_on>
-            <sys_id>00a22652db4600101ed2c4ab0b96194f</sys_id>
+            <sys_created_on>2020-01-06 07:08:58</sys_created_on>
+            <sys_id>68f33eafdb4e44101ed2c4ab0b9619b8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Book appoitment" display_value="Book appoitment" name="x_423236_health_ca_appointment" sys_domain="global" view="Default view">990c02cadbed40101ed2c4ab0b961945</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-01-02 08:40:53</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_user_name</element>
-            <position>1</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-01-02 08:40:53</sys_created_on>
-            <sys_id>c8a22652db4600101ed2c4ab0b96194f</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Book appoitment" display_value="Book appoitment" name="x_423236_health_ca_appointment" sys_domain="global" view="Default view">990c02cadbed40101ed2c4ab0b961945</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-01-02 08:40:53</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_string_4</element>
-            <position>2</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-01-02 08:40:53</sys_created_on>
-            <sys_id>40a22652db4600101ed2c4ab0b961950</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Book appoitment" display_value="Book appoitment" name="x_423236_health_ca_appointment" sys_domain="global" view="Default view">990c02cadbed40101ed2c4ab0b961945</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-01-02 08:40:53</sys_updated_on>
+            <sys_updated_on>2020-01-06 07:08:58</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>3</position>
+            <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-01-02 08:40:53</sys_created_on>
-            <sys_id>c4a22652db4600101ed2c4ab0b961950</sys_id>
+            <sys_created_on>2020-01-06 07:08:58</sys_created_on>
+            <sys_id>ecf33eafdb4e44101ed2c4ab0b9619b8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Book appoitment" display_value="Book appoitment" name="x_423236_health_ca_appointment" sys_domain="global" view="Default view">990c02cadbed40101ed2c4ab0b961945</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-01-02 08:40:53</sys_updated_on>
+            <sys_updated_on>2020-01-06 07:08:58</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_email_2</element>
-            <position>4</position>
+            <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-01-02 08:40:53</sys_created_on>
-            <sys_id>4ca22652db4600101ed2c4ab0b961950</sys_id>
+            <sys_created_on>2020-01-06 07:08:58</sys_created_on>
+            <sys_id>64f33eafdb4e44101ed2c4ab0b9619b9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Book appoitment" display_value="Book appoitment" name="x_423236_health_ca_appointment" sys_domain="global" view="Default view">990c02cadbed40101ed2c4ab0b961945</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-01-02 08:40:53</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_string_5</element>
-            <position>5</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-01-02 08:40:53</sys_created_on>
-            <sys_id>c0a22652db4600101ed2c4ab0b961951</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Book appoitment" display_value="Book appoitment" name="x_423236_health_ca_appointment" sys_domain="global" view="Default view">990c02cadbed40101ed2c4ab0b961945</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-01-02 08:40:53</sys_updated_on>
+            <sys_updated_on>2020-01-06 07:08:58</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

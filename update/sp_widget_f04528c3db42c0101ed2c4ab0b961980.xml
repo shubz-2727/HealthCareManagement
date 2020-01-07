@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function scheduleAppointment($rootScope, $timeout, $scope, $window, spUtil) {
+    var c = this;
+    $rootScope.$broadcast('refreshFooterUrl');
+    $scope.userID = $scope.user.sys_id;
+    c.toggleDelete = {};
+		
+    c.noAppointments = false;
+    c.$onInit = function() {
+        getCurrentAppointments();
+    };
+
+    c.removeAppt = function(sys_id) {
+        c.toggleDelete[sys_id].confirm = true;
+        c.toggleDelete[sys_id].show = false;
+    };
+
+    c.cancelAppt = function(sys_id) {
+        c.toggleDelete[sys_id].confirm = false;
+        c.toggleDelete[sys_id].show = true;
+    };
+
+    c.deleteAppt = function(sys_id) {
+        c.server.get({
+            action: 'deleteTimeSlot',
+            taskSysid: sys_id
+        }).then(function(response) {
+            c.toggleDelete[sys_id].confirm = false;
+            c.toggleDelete[sys_id].show = false;
+            getCurrentAppointments();
+        });
+
+    };
+
+    c.parseDateTime = function(slotTime, type) {
+        var dt = slotTime.split(" ")[0];
+        var time = slotTime.split(" ")[1].split(":");
+        var parsed = [4];
+
+        //Date
+        parsed[0] = moment(dt).format("dddd, MMMM D YYYY");
+
+        //Time
+        var hour = parseInt(time[0].toString(), 10);
+        var minutes = time[1];
+        var amPM = "";
+        if (c.data.dateFormat == "12") {
+            if (hour < 12) {
+                amPM = "AM";
+            } else if (hour == 12) {
+                amPM = "PM";
+            } else {
+                hour = hour - 12;
+                amPM = "PM";
+            }
+        }
+        parsed[1] = hour + ":" + minutes + amPM;
+        if (parsed[1].split("")[0] === "0") {
+            parsed[1] = parsed[1].substring(1, parsed[1].length);
+        }
+
+        //Day of Week
+        parsed[2] = moment(dt).format("ddd");
+
+        //Short Date (no year)
+        parsed[3] = moment(dt).format("MMM D");
+
+        return parsed[type];
+    };
+
+
+    $rootScope.$on('appointmentCreated', function(event, data) {
+        getCurrentAppointments();
+    });
+
+    function getCurrentAppointments() {
+        c.server.get({
+            action: 'getCurrentAppointments'
+        }).then(function(response) {
+            if (JSON.parse(response.data.currentAppointments).length > 0) {
+                c.currentUserAppointments = processTheTimes(JSON.parse(response.data.currentAppointments));
+                c.noAppointments = false;
+            } else {
+                c.noAppointments = true;
+            }
+        });
+    }
+
+    function processTheTimes(appointments) {
+        for (var i = 0; i < appointments.length; i++) {
+            appointments[i].work_in = moment(appointments[i].work_start).fromNow();
+            appointments[i].today = (moment().diff(appointments[i].work_start, 'days') === 0);
+            if (appointments[i].duration > 0) {
+                appointments[i].duration = Math.floor(appointments[i].duration / 60);
+            }
+
+            appointments[i].time = c.parseDateTime(appointments[i].work_start, 1);
+            appointments[i].weekday = c.parseDateTime(appointments[i].work_start, 2);
+            appointments[i].day = c.parseDateTime(appointments[i].work_start, 3);
+            c.toggleDelete[appointments[i].sys_id] = {
+                confirm: false,
+                show: true
+            };
+        }
+        return appointments;
+    }
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>$brand-primary:#4b8cfb !default;
+$icon-color:red;
+.bg-darkblue {
+    margin-bottom: 10px;
+}
+
+.upcoming-appointments {
+    background: #fff;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.ghost-container {
+    margin: 0 auto;
+    background-color: transparent;
+    position: relative;
+}
+
+.no-slots {
+    margin: 0 auto;
+    margin-top: 10px;
+    color: #FB4B4B;
+    text-align: center;
+}
+
+.appt-title {
+    font-weight: 300;
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 1;
+    color: $bam-darkblue;
+    @media (max-width: 375px) {}
+    @media (max-width: 320px) {
+        width: 285px;
+    }
+}
+
+.appt-subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    color: $bam-dark-gray;
+    margin-left: 5px;
+    margin-bottom: 40px;
+    @media (max-width: 320px) {
+        width: 285px;
+    }
+}
+
+.btn.btn-primary {
+    margin: 0 auto !important;
+    @include border-radius(6px);
+    background-color: $bam-blue;
+    color: $bam-white;
+    border-color: transparent;
+    width: 325px;
+    height: 50px;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    @media (max-width: 375px) {
+        margin-left: 0px;
+    }
+    @media (max-width: 320px) {
+        width: 285px;
+    }
+}
+
+.container-appts {
+    margin: 0;
+    background-color: transparent;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.appts {
+    font-size: 14px;
+    color: $bam-blue;
+}
+
+.appt-container {
+    color: #676767;
+    background-color: transparent;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0px;
+}
+
+.appt-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+    min-height: 79px;
+    background-color: #fff;
+    padding: 0px;
+    border: solid 1px #dfdfdf;
+    margin-left: 0px;
+    font-size: 16px;
+}
+
+.appt-delete {
+    line-height: 72px;
+}
+
+.appt-site {
+    display: block;
+    font-weight: 500;
+}
+
+.padding-override {
+    padding: 0px;
+}
+
+.appt-when {
+    display: inline-block;
+    padding: 0 20px;
+    width: 15%;
+}
+
+.appt-where-location {
+    width: 35%;
+    text-align: left;
+    display: inline-block;
+}
+
+.appt-where-time {
+    width: 15%;
+    text-align: left;
+    display: inline-block;
+}
+
+.appt-short-description {
+    width: 35%;
+    text-align: left;
+    display: inline-block;
+    @media (max-width: 414px) {
+        display: none;
+    }
+}
+
+.appt-tools {
+    display: inline-block;
+}
+
+.appt-datetime {
+    display: block;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 14px;
+    width: 45px;
+}
+
+.appt-short-description-font {
+    display: block;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.appt-weekday {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 40px;
+}
+
+.appt-icon {
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-right: 15px;
+    object-fit: contain;
+    height: 22px;
+    width: 22px;
+    stroke: $icon-color;
+}
+
+.btn-cancel {
+    background-color: transparent;
+    width: 87px;
+    height: 30px;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    color: #676767;
+    border-radius: 4px;
+    border: solid 2px #dfdfdf;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.btn-delete {
+    background-color: transparent;
+    width: 114px;
+    height: 30px;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    color: $brand-primary;
+    border-radius: 4px;
+    border: solid 2px $brand-primary;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>hcm_appointment_list</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>HCM appointment List</name>
+        <option_schema>[{"name":"title","label":"Title","type":"string"},{"displayValue":"Task Appointment","name":"task_appointment","label":"Task Appointment Definition","type":"reference","value":"u_task_appointment","ed":{"reference":"u_task_appointment"}},{"name":"show_short_description","label":"Show Short Description","type":"boolean"},{"name":"show_location","label":"Show Location","type":"boolean"}]</option_schema>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[// populate the 'data' variable with catalog item, variables, and variable view
+(function() {
+    data.dateFormat = getTimeFormat();
+		data.userID = gs.getUserID();
+    data.userName = gs.getUserDisplayName();
+
+    function getTimeFormat() {
+        var taskApptRec = new GlideRecord("u_task_appointment");
+        taskApptRec.get(options.task_appointment);
+        return taskApptRec.getValue("u_widget_time_format");
+    }
+
+    if (input) {
+        if (input.action == 'getCurrentAppointments') {
+            data.currentAppointments = new global.TaskAppointmentUtils().getUserAppointments(data.userID);
+        }
+        if (input.action == 'deleteTimeSlot') {
+            data.deleted = new global.TaskAppointmentUtils().removeAppointment(data.userID, input.taskSysid);
+        }
+    }
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-04 07:28:36</sys_created_on>
+        <sys_id>f04528c3db42c0101ed2c4ab0b961980</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>HCM appointment List</sys_name>
+        <sys_package display_value="Health Care Management" source="x_423236_health_ca">38754642dbed40101ed2c4ab0b9619f5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Health Care Management">38754642dbed40101ed2c4ab0b9619f5</sys_scope>
+        <sys_update_name>sp_widget_f04528c3db42c0101ed2c4ab0b961980</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-04 07:54:11</sys_updated_on>
+        <template><![CDATA[<svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
+  <symbol id='icon-trash' width="20" height="22" viewBox="0 0 20 22">
+    <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3.083 3.917h13.333v16.667H3.083zM6.417 1.417h6.667v2.5H6.417zM1 3.917h18.333M6.417 6.833v10M9.75 6.833v10M13.083 6.833v10"/>
+    </g>
+  </symbol>
+</svg>
+	<div class="upcoming-appointments">
+            <div class='col-xs-12'>
+                <div class='ghost-container'>
+                    <div class='appt-title'>{{c.options.title}}</div>
+                 
+                </div>
+                <div class='ghost-container' ng-show="c.noAppointments">
+                    <div class='appt-subtitle'>You have no scheduled appointments.</div>
+                </div>
+                <div class='ghost-container'>
+                    <div class='appt-container' ng-repeat='item in c.currentUserAppointments track by $index'>
+                        <div class='appt-box' ng-show='c.toggleDelete[item.sys_id].show'>
+                            <div class='appt-when'>
+                                <div class='appt-weekday'>{{item.weekday}}</div>
+                                <div class='appt-datetime'>{{item.day}}</div>
+                            </div>
+                            <div class='appt-where-location' ng-if="c.options.show_location == 'true'">
+                                <div class='appt-site'>{{item.location_name}}</div>
+                                <div class='appt-datetime'>{{item.time}}</div>
+                            </div>
+                            <div class='appt-where-time' ng-if="c.options.show_location != 'true'">
+                                <div class='appt-datetime'>{{item.time}}</div>
+                            </div>
+                             <div class='appt-short-description' ng-if="c.options.show_short_description == 'true'">
+                                <div class='appt-short-description-font'>{{item.short_description}}</div>
+                            </div>
+                            <div class='appt-tools'>
+
+                                    <svg class="appt-icon" ng-click='c.removeAppt(item.sys_id)'>
+                                    <use xlink:href='#icon-trash'></use>
+                                    </svg>
+														</div>
+											</div>
+							<div class='row appt-box appt-delete' ng-show='c.toggleDelete[item.sys_id].confirm'>
+   						<div class='col-xs-12 text-center'>
+                <input type='button' class='btn btn-cancel' value='CANCEL' ng-click='c.cancelAppt(item.sys_id)' />
+                <input type='button' class='btn btn-delete' value='YES, DELETE!' ng-click='c.deleteAppt(item.sys_id)' />
+   						</div>
+					</div>
+			</div>
+	</div>
+</div>
+
+
+</div>]]></template>
+    </sp_widget>
+</record_update>
